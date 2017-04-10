@@ -25,7 +25,7 @@ descripcion varchar(100) not null,
 FOREIGN KEY (artefacto_id) REFERENCES artefacto(id),
 FOREIGN KEY (caracteristica_id) REFERENCES caracteristica(id));
 
-create table celulares
+create table smartphone
 (id int not null primary key,
 artefactos_id int not null,
 caracteristicas_id int not null,
@@ -46,9 +46,16 @@ insert into artefacto values (1, 'Cocina', 'mar', 'mod', '$', '0');
 insert into artefacto values (2, 'Aire Acondicionado', 'mar', 'mod', '$', '0');
 insert into artefacto values (3, 'Ventiladores', 'mar', 'mod', '$', '0');
 insert into artefacto values (4, 'Estufa', 'mar', 'mod', '$', '0');
+insert into artefacto values (5, 'Cocina', 'mar', 'mod', '$', '0');
 
 /*Televisores:*/
-insert into artefacto values (5, 'TV', 'mar', 'mod', '$', '0');
+insert into artefacto values (6, 'TV', 'mar', 'mod', '$', '0');
+
+/*Notebook*/
+insert into artefacto values (7, 'Notebook', 'mar', 'mod', '$', '0');
+
+/*Smartphone*/
+insert into artefacto values (8, 'Smartphone', 'mar', 'mod', '$', '0');
 
 create table caracteristica
 (id int not null primary key,
@@ -71,11 +78,9 @@ insert into caracteristica values (8, 'Tipo de Aire', null);
 insert into caracteristica values (9, 'Consumo Energetico en Frio', null);
 insert into caracteristica values (10, 'Consumo Energetico en Calor', null);
 insert into caracteritica values (11, 'Medidas de unidad exterior', 'cm');
-insert into caracteritica values (11, 'Medidas de unidad interior', 'cm');
+insert into caracteritica values (12, 'Medidas de unidad interior', 'cm');
 
 /*Caracteristicas de Televisores:*/
-insert into caracteritica values (11, 'Panel', null);
-insert into caracteritica values (12, 'Tipo de Panel', null);
 insert into caracteritica values (13, 'Resolucion', null);
 insert into caracteritica values (14, 'Pulgadas de Pantalla', '´');
 insert into caracteritica values (15, 'SmartTV', null);
@@ -97,7 +102,7 @@ insert into caracteritica values (28, 'Puertos USB 3.0', null);
 insert into caracteritica values (29, 'Unidad Lectora', null);
 insert into caracteritica values (30, 'Capacidad de Bateria', 'mAmp');
 
-/*Caracteristica de Celulares:*/
+/*Caracteristica de Smartphone:*/
 insert into caracteritica values (31, 'Sistema Operativo', null);
 insert into caracteritica values (32, 'Procesador', null);
 insert into caracteritica values (33, 'Tamaño de Pantalla', '´');
