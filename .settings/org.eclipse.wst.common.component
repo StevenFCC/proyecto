@@ -2,6 +2,7 @@
 	<wb-module deploy-name="proyecto">
 		<property name="context-root" value="proyecto"/>
 		<wb-resource deploy-path="/" source-path="src/main/webapp"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
 	</wb-module>
 </project-modules>
