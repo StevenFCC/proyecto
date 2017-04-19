@@ -891,17 +891,10 @@ insert into smartphones (artefacto_id, caracteristica_id, descripcion_caracteris
 	
 create table artefactos
 (id int not null primary key,
-nombre varchar(15) not null,
+nombre varchar(18) not null,
 marca varchar(15) not null,
 modelo varchar(20) not null,
 precio int not null);
-
-drop table electrodomesticos;
-drop table televisores;
-drop table notebooks;
-drop table smartphones;
-drop table artefactos;
-drop table caracteristicas;
 
 /*Artefactos*/
 /*insert into artefactos values (id, 'Tipo de Artefacto', 'Marca', 'Modelo', precio);*/
@@ -998,7 +991,6 @@ insert into caracteristicas values (3, 'Eficiencia Energetica', null);
 /*Caracteristicas de Cocinas:*/
 insert into caracteristicas values (4, 'Cantidad de hornallas', null);
 insert into caracteristicas values (5, 'Tipo de Fuente', null);
-insert into caracteristicas values (6, 'Consumo Energetico', 'Watts');
 insert into caracteristicas values (7, 'Tipo de Conexion', null);
 
 /*Caracteristicas de Aires Acondicionados:*/
@@ -1007,8 +999,8 @@ insert into caracteristicas values (9, 'Calor', null);
 insert into caracteristicas values (10, 'Tipo de Aire', null);
 insert into caracteristicas values (11, 'Consumo Energetico en Frio', null);
 insert into caracteristicas values (12, 'Consumo Energetico en Calor', null);
-insert into caracteristicas values (47, 'Potencia en Frio', null);
-insert into caracteristicas values (48, 'Potencia en Calor', null);
+insert into caracteristicas values (47, 'Potencia en Frio', 'Frigorias');
+insert into caracteristicas values (48, 'Potencia en Calor', 'Frigorias');
 insert into caracteristicas values (49, 'Eficiencia Energetica en Frio', null);
 insert into caracteristicas values (50, 'Eficiencia Energetica en Calor', null);
 insert into caracteristicas values (13, 'Medidas de unidad exterior', 'cm');
@@ -1053,3 +1045,10 @@ insert into caracteristicas values (43, 'Posee Flash', null);
 insert into caracteristicas values (44, 'Posee Camara Frontal', null);
 insert into caracteristicas values (45, 'Camara Frontal', 'PX');
 insert into caracteristicas values (46, 'Capacidad de Bateria', 'mAmp');
+
+drop table electrodomesticos;
+drop table televisores;
+drop table notebooks;
+drop table smartphones;
+drop table artefactos;
+drop table caracteristicas;
