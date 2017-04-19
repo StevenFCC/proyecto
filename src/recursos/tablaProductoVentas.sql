@@ -2,7 +2,7 @@ create database productosVentas;
 use productosVentas;
 
 create table electrodomesticos
-(id int not null primary key,
+(id int not null primary key auto_increment,
 artefacto_id int not null,
 caracteristica_id int not null,
 descripcion_caracteristica varchar(100) not null,
@@ -160,61 +160,49 @@ insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_cara
 /*--------------------*/
 
 /*'Aire Acondicionado', 'BGH', 'BC23FN'*/
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 8, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 9, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 10, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 11, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 12, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 47, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 48, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 49, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 50, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 13, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 14, 'dc');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 8, 'true');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 9, 'false');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 10, 'Ventana');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 11, '2600');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 47, '2300');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 49, 'A');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 13, '38.6 x 60 x 56');
 
 /*'Aire Acondicionado', 'BGH', 'BC30FN'*/
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 8, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 9, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 10, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 11, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 12, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 47, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 48, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 49, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 50, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 13, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 14, 'dc');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 8, 'true');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 9, 'false');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 10, 'Ventana');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 11, '3500');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 47, '3000');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 49, 'A');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 13, '38.6 x 60 x 56');
 
 /*--------------------*/
 
 /*'Aire Acondicionado', 'Sanyo', 'SA916ARN'*/
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 8, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 9, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 10, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 11, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 12, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 47, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 48, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 49, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 50, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 13, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 14, 'dc');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 8, 'true');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 9, 'false');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 10, 'Ventana');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 11, '2500');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 47, '2200');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 49, 'A');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 13, '38 x 60 x 56');
 
 /*--------------------*/
 
 /*'Ventiladores', 'Protalia', 'V18P'*/
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 1, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 2, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 3, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 15, 'dc');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 1, '85');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 2, 'Alto 160 y Diametro de ventilador 18"');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 3, 'No especificada');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 15, '3');
 
 /*--------------------*/
 
 /*'Ventiladores', 'Sansei', 'VPS1030'*/
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 1, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 2, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 3, 'dc');
-insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 15, 'dc');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 1, '45');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 2, 'Alto 170 y Diamtro de ventilador 16"');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 3, 'No especificado');
+insert into electrodomesticos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 15, '3');
 
 
 
