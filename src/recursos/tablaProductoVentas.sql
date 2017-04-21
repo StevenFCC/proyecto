@@ -1038,3 +1038,7 @@ drop table notebooks;
 drop table smartphones;
 drop table artefactos;
 drop table caracteristicas;
+
+SELECT nombre_de_caracteristica, unidad_de_medida, artefactos.id, nombre, marca, modelo, precio, descripcion_caracteristica FROM productosventas.electrodomesticos
+join caracteristicas on caracteristicas.id = caracteristica_id
+join artefactos on artefactos.id = artefacto_id;
