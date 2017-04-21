@@ -1,4 +1,4 @@
-package org.proyecto.entities.Smartphones;
+package org.proyecto.entities;
 
 public class Smartphone {
 	private String sistemaOperativo;

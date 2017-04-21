@@ -1,4 +1,4 @@
-package org.proyecto.entities.Electrodomesticos;
+package org.proyecto.entities;
 
 public class Ventilador {
 	private int numeroDeVelocidades;

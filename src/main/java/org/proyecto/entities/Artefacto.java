@@ -61,9 +61,10 @@ public abstract class Artefacto {
 	protected List<Artefacto> listaDeArtefacto(int idDeArtefacto) throws SQLException {
 		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
-		ResultSet rs = st.executeQuery("select from artefactos where id = " + idDeArtefacto);
+		ResultSet rs = st.executeQuery("select * from artefactos where id = " + idDeArtefacto);
 		
-		List<Artefacto> listaArtefacto = null; new ArrayList<Artefacto>();
+		List<Artefacto> listaArtefacto = null; 
+		new ArrayList<Artefacto>();
 		setNombre(rs.getString(1));
 		setMarca (rs.getString(2));
 		setModelo (rs.getString(3));

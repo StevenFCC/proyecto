@@ -1,4 +1,4 @@
-package org.proyecto.entities.Televisores;
+package org.proyecto.entities;
 
 public class Televisor {
 	private String panel;

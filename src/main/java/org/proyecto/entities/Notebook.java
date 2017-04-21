@@ -1,4 +1,4 @@
-package org.proyecto.entities.Notebooks;
+package org.proyecto.entities;
 
 public class Notebook {
 	private String cpu;
