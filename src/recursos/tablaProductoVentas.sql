@@ -220,76 +220,62 @@ FOREIGN KEY (caracteristica_id) REFERENCES caracteristica(id));
 
 
 /*'TV', 'Samsung', 'UN32J4000AGCTC'*/
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 1, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 2, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 3, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 16, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 17, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 18, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 19, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 20, 'dc');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 2, '43.4 x 74.5 x 6.8');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 16, 'LED');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 17, 'HD 1366 X 768');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 18, '32');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 19, 'false');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (21, 20, 'false');
 
 /*'TV', 'Samsung', 'UN40J5300AGCDF'*/
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 1, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 2, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 3, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 16, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 17, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 18, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 19, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 20, 'dc');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 2, '52.97 x 90.76 x 6.69');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 16, 'LED');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 17, 'Full HD 1920 X 1080');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 18, '40');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 19, 'true');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (22, 20, 'false');
 
 /*'TV', 'Samsung', 'UN50J5300AGCDF'*/
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 1, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 2, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 3, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 16, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 17, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 18, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 19, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 20, 'dc');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 2, '64.79 x 111.78 x 6.71');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 16, 'LED');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 17, 'Full HD 1920 X 1080');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 18, '50');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 19, 'true');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (23, 20, 'false');
 
 /*--------------------*/
 
 /*'TV', 'LG', '43UH6500'*/
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 1, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 2, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 3, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 16, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 17, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 18, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 19, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 20, 'dc');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 2, '57.2 x 97.3 x 7.7');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 16, 'LED');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 17, '4K 3840 X 2160');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 18, '43');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 19, 'true');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (24, 20, 'true');
 
 /*'TV', 'LG', '32LH575B'*/
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 1, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 2, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 3, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 16, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 17, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 18, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 19, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 20, 'dc');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 2, '47.4 x 73.4 x 7.1');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 16, 'LED');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 17, 'HD 1366 X 768');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 18, '32');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 19, 'true');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (25, 20, 'true');
 
 /*'TV', 'LG', '65UG8700.AWG'*/
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 1, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 2, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 3, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 16, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 17, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 18, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 19, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 20, 'dc');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 2, '146.1 x 89.7 x 25.5');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 16, 'LED Curva 3D');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 17, '4K 3840 X 2160');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 18, '65');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 19, 'true');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (26, 20, 'true');
 
 /*'TV', 'LG', '49LH5700'*/
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 1, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 2, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 3, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 16, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 17, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 18, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 19, 'dc');
-insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 20, 'dc');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 2, '65.7 x 110.8 x 8.2');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 16, 'LED');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 17, 'Full Hd 1920 X 1080');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 18, '49');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 19, 'true');
+insert into televisores (artefacto_id, caracteristica_id, descripcion_caracteristica) values (27, 20, 'true');
 
 
 
