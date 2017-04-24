@@ -1,6 +1,6 @@
 package org.proyecto.entities;
 
-public abstract class Artefacto {
+public class Artefacto {
 	
 	protected String nombre;
 	protected String marca;
