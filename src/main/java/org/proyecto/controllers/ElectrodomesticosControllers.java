@@ -1,13 +1,16 @@
 package org.proyecto.controllers;
 
+import java.sql.SQLException;
+
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
-import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+
+import org.proyecto.entities.CocinaDeGas;
+import org.proyecto.sevices.ElectrodomesticosServices;
 
 
 @Consumes(MediaType.APPLICATION_JSON)
@@ -15,11 +18,14 @@ import javax.ws.rs.core.MediaType;
 
 public class ElectrodomesticosControllers {
 	
+	private final ElectrodomesticosServices service = new ElectrodomesticosServices();
+	
 	@GET
-	@Path("cocina/{id}")
+	@Path("/cocina/{id}")
 	@Produces("text/plain")
 	
-	public String getCocina(@PathParam("id") String idCocina){
-		
+	public CocinaDeGas getCocina(@PathParam("id") String idArtefacto) throws NumberFormatException, SQLException {
+			CocinaDeGas cocina = service.getCocina(Integer.valueOf(idArtefacto));
+			return cocina;
 	}
 }

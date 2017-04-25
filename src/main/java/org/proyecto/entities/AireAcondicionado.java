@@ -1,4 +1,4 @@
-package org.proyecto.entities.Electrodomesticos;
+package org.proyecto.entities;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 import org.proyecto.connection.JDBCConnection;
 
-public class AireAcondicionado extends Electrodomestico{
+public class AireAcondicionado extends Electrodomestico {
 	private boolean frio;
 	private boolean calor;
 	private String tipoDeAire;
@@ -63,13 +63,5 @@ public class AireAcondicionado extends Electrodomestico{
 	
 	public String getMedidasDeUnidadInterior() {
 		return medidasDeUnidadInterior;
-	}
-	
-	public AireAcondicionado(int idAireAcondicionado) throws SQLException {
-		Connection con = JDBCConnection.connectToDataBase();
-		Statement st = con.createStatement();
-		ResultSet rs = st.executeQuery("select * from electrodomesticos where id = " + idAireAcondicionado);
-		this.consumoEnergetico = rs.getInt(1);
-		
 	}
 }
