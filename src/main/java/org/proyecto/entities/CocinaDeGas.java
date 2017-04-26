@@ -31,9 +31,4 @@ public class CocinaDeGas extends Electrodomestico {
 	public void setTipoDeConexion(String tipoDeConexion) {
 		this.tipoDeConexion = tipoDeConexion;
 	}
-	
-	public CocinaDeGas(String marca, String modelo) {
-		setMarca(marca);
-		setModelo(modelo);
-	}
 }

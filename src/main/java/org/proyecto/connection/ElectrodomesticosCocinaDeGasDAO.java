@@ -11,6 +11,7 @@ import org.proyecto.entities.CocinaDeGas;
 public class ElectrodomesticosCocinaDeGasDAO {
 	
 	public CocinaDeGas getCocinaDeGas(int idArtefacto) throws SQLException {
+		
 		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
 		String select = "SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, electrodomesticos.descripcion_caracteristica, caracteristicas.unidad_de_medida FROM productosventas.electrodomesticos";
@@ -23,6 +24,7 @@ public class ElectrodomesticosCocinaDeGasDAO {
 		while (rs.next()) {
 			String marca = rs.getString(3);
 			cocinaDeGas.setMarca(marca);
+			
 			String modelo = rs.getString(4);
 			cocinaDeGas.setModelo(modelo);
 			
@@ -44,8 +46,9 @@ public class ElectrodomesticosCocinaDeGasDAO {
 				cocinaDeGas.setImagen(rs.getString(6));
 			}
 			
-		JDBCConnection.closeConnectionToDataBase(con);
+			JDBCConnection.closeConnectionToDataBase(con);
 		}
+		
 	return cocinaDeGas;
 	}
 }

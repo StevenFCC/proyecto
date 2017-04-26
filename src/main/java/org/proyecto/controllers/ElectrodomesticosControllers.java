@@ -23,7 +23,6 @@ public class ElectrodomesticosControllers {
 	@GET
 	@Path("/cocina/{id}")
 	@Produces("text/plain")
-	
 	public CocinaDeGas getCocina(@PathParam("id") String idArtefacto) throws NumberFormatException, SQLException {
 			CocinaDeGas cocina = service.getCocina(Integer.valueOf(idArtefacto));
 			return cocina;

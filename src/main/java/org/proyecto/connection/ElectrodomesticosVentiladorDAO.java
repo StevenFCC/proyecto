@@ -5,11 +5,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import org.proyecto.entities.Televisor;
+import org.proyecto.entities.Ventilador;
 
-public class TelevisoresDAO {
-	
-	public Televisor getTele(int idArtefacto) throws SQLException {
+public class ElectrodomesticosVentiladorDAO {
+
+	public Ventilador getVentilador(int idArtefacto) throws SQLException {
 		
 		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
@@ -18,33 +18,34 @@ public class TelevisoresDAO {
 		String where = "where artefactos.id = " + idArtefacto + ";";
 		ResultSet rs = st.executeQuery(select + " " + join + " " + where);
 		
-		Televisor tele = null;
+		Ventilador venti = null;
 		
-		while (rs.next()) {
-			tele.setMarca(rs.getString(3));
-			tele.setModelo(rs.getString(4));
+		while(rs.next()) {
+			String marca = rs.getString(3);
+			venti.setMarca(marca);
+			
+			String modelo = rs.getString(4);
+			venti.setModelo(modelo);
 			
 			String nombreCaracteristica = rs.getString(5);
 			
-			if (nombreCaracteristica.equals("Panel")) {
-				tele.setPanel(rs.getString(6));
-			} else if (nombreCaracteristica.equals("Resolucion Pantalla")) {
-				tele.setResolucionDePantalla(rs.getString(6));
-			} else if (nombreCaracteristica.equals("Pulgadas de Pantalla")) {
-				tele.setPulgadasDePantalla(rs.getInt(6));
-			} else if (nombreCaracteristica.equals("SmartTV")) {
-				tele.setSmartTv(rs.getBoolean(6));
-			} else if (nombreCaracteristica.equals("Parlantes Sourround")) {
-				tele.setParlantesSourrand(rs.getBoolean(6));
+			if (nombreCaracteristica.equals("Consumo Energetico")) {
+				venti.setConsumoEnergetico(rs.getInt(6));
+			} else if (nombreCaracteristica.equals("Medidas")) {
+				venti.setMedidas(rs.getString(6));
+			} else if (nombreCaracteristica.equals("Eficiencia Energetica")) {
+				venti.setEficienciaEnergetica(rs.getString(6));
 			} else if (nombreCaracteristica.equals("Precio")) {
-				tele.setPrecio(rs.getInt(6));
+				venti.setPrecio(rs.getInt(6));
 			} else if (nombreCaracteristica.equals("Direccion de Imagen")) {
-				tele.setImagen(rs.getString(6));
+				venti.setImagen(rs.getString(6));
+			} else if (nombreCaracteristica.equals("Numero de Velocidades")) {
+				venti.setNumeroDeVelocidades(rs.getInt(6));
 			}
 			
 			JDBCConnection.closeConnectionToDataBase(con);
 		}
-	
-	return tele;
+		
+	return venti;
 	}
 }

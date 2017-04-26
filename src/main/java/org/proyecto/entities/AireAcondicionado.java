@@ -1,11 +1,5 @@
 package org.proyecto.entities;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
-import org.proyecto.connection.JDBCConnection;
 
 public class AireAcondicionado extends Electrodomestico {
 	private boolean frio;
@@ -63,5 +57,49 @@ public class AireAcondicionado extends Electrodomestico {
 	
 	public String getMedidasDeUnidadInterior() {
 		return medidasDeUnidadInterior;
+	}
+		
+	public void setFrio(boolean frio) {
+		this.frio = frio;
+	}
+
+	public void setCalor(boolean calor) {
+		this.calor = calor;
+	}
+
+	public void setTipoDeAire(String tipoDeAire) {
+		this.tipoDeAire = tipoDeAire;
+	}
+
+	public void setConsumoEnergeticoEnFrio(String consumoEnergeticoEnFrio) {
+		this.consumoEnergeticoEnFrio = consumoEnergeticoEnFrio;
+	}
+
+	public void setConsumoEnergeticoEnCalor(String consumoEnergeticoEnCalor) {
+		this.consumoEnergeticoEnCalor = consumoEnergeticoEnCalor;
+	}
+
+	public void setPotenciaEnFrio(int potenciaEnFrio) {
+		this.potenciaEnFrio = potenciaEnFrio;
+	}
+
+	public void setPotenciaEnCalor(int potenciaEnCalor) {
+		this.potenciaEnCalor = potenciaEnCalor;
+	}
+
+	public void setEficienciaEnergeticaEnFrio(String eficienciaEnergeticaEnFrio) {
+		this.eficienciaEnergeticaEnFrio = eficienciaEnergeticaEnFrio;
+	}
+
+	public void setEficienciaEnergeticaEnCalor(String eficienciaEnergeticaEnCalor) {
+		this.eficienciaEnergeticaEnCalor = eficienciaEnergeticaEnCalor;
+	}
+
+	public void setMedidasDeUnidadExterior(String medidasDeUnidadExterior) {
+		this.medidasDeUnidadExterior = medidasDeUnidadExterior;
+	}
+
+	public void setMedidasDeUnidadInterior(String medidasDeUnidadInterior) {
+		this.medidasDeUnidadInterior = medidasDeUnidadInterior;
 	}
 }
