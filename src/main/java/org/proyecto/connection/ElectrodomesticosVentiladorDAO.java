@@ -18,7 +18,7 @@ public class ElectrodomesticosVentiladorDAO {
 		String where = "where artefactos.id = " + idArtefacto + ";";
 		ResultSet rs = st.executeQuery(select + " " + join + " " + where);
 		
-		Ventilador venti = null;
+		Ventilador venti = new Ventilador();
 		
 		while(rs.next()) {
 			String marca = rs.getString(3);

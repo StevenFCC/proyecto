@@ -148,8 +148,8 @@ public class Notebook {
 		this.capacidadDeDisco = capacidadDeDisco;
 	}
 
-	public void setPulgadasPantalla(int tamannoDePantalla) {
-		this.pulgadasPantalla = tamannoDePantalla;
+	public void setPulgadasPantalla(int pulgadasPantalla) {
+		this.pulgadasPantalla = pulgadasPantalla;
 	}
 
 	public void setResolucionDePantalla(String resolucionDePantalla) {
@@ -174,5 +174,9 @@ public class Notebook {
 
 	public void setCapacidadDeBateria(int capacidadDeBateria) {
 		this.capacidadDeBateria = capacidadDeBateria;
+	}
+	
+	public Notebook() {
+		
 	}
 }

@@ -13,4 +13,8 @@ public class Ventilador extends Electrodomestico {
 	public void setNumeroDeVelocidades(int numeroDeVelocidades) {
 		this.numeroDeVelocidades = numeroDeVelocidades;
 	}
+
+	public Ventilador() {
+		
+	}
 }

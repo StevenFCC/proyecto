@@ -18,7 +18,7 @@ public class ElectrodomesticosAireAcondicionadoDAO {
 		String where = "where artefactos.id = " + idArtefacto + ";";
 		ResultSet rs = st.executeQuery(select + " " + join + " " + where);
 		
-		AireAcondicionado aire = null;
+		AireAcondicionado aire = new AireAcondicionado();
 		
 		while (rs.next()) {
 			String marca = rs.getString(3);

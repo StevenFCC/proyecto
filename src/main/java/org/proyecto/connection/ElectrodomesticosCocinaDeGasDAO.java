@@ -14,12 +14,13 @@ public class ElectrodomesticosCocinaDeGasDAO {
 		
 		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
-		String select = "SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, electrodomesticos.descripcion_caracteristica, caracteristicas.unidad_de_medida FROM productosventas.electrodomesticos";
-		String join = "join caracteristicas on caracteristicas.id = caracteristica_id join artefactos on artefactos.id = artefacto_id";
-		String where = "where artefactos.id = " + idArtefacto + ";";
-		ResultSet rs = st.executeQuery(select + " " + join + " " + where);
+		//String select = "SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, electrodomesticos.descripcion_caracteristica, caracteristicas.unidad_de_medida FROM productosventas.electrodomesticos";
+		//String join = "join caracteristicas on caracteristicas.id = caracteristica_id";
+		//String join2 = "join artefactos on artefactos.id = artefacto_id";
+		//String where = "where artefactos.id = " + idArtefacto + ";";
+		ResultSet rs = st.executeQuery("SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, electrodomesticos.descripcion_caracteristica, caracteristicas.unidad_de_medida FROM productosventas.electrodomesticos join caracteristicas on caracteristicas.id = caracteristica_id join artefactos on artefactos.id = artefacto_id where artefactos.id = " + idArtefacto + ";");
 		
-		CocinaDeGas cocinaDeGas = null;
+		CocinaDeGas cocinaDeGas = new CocinaDeGas();
 		
 		while (rs.next()) {
 			String marca = rs.getString(3);
@@ -30,7 +31,7 @@ public class ElectrodomesticosCocinaDeGasDAO {
 			
 			String nombreDeCaracteristica = rs.getString(5);
 			
-			if (nombreDeCaracteristica.equals("Medidas") ) {
+			if (nombreDeCaracteristica.equals("Medidas")) {
 				cocinaDeGas.setMedidas(rs.getString(6));
 			} else if (nombreDeCaracteristica.equals("Eficiencia Energetica")) {
 				cocinaDeGas.setEficienciaEnergetica(rs.getString(6));
