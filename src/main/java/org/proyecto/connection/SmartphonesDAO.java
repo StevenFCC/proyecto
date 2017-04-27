@@ -16,8 +16,9 @@ public class SmartphonesDAO {
 		String select = "SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, smartphones.descripcion_caracteristica, caracteristicas.unidad_de_medida";
 		String from = "FROM productosventas.smartphones";
 		String join = "join caracteristicas on caracteristicas.id = caracteristica_id";
-		String join2 = "join artefactos on artefactos.id = artefacto_id where artefactos.id = ";
-		ResultSet rs = st.executeQuery(select + " " + from + " " + join + " " + join2 + idArtefacto + ";");
+		String join2 = "join artefactos on artefactos.id = artefacto_id";
+		String where = "where artefactos.id = "; 
+		ResultSet rs = st.executeQuery(select + " " + from + " " + join + " " + join2 + " " + where + idArtefacto + ";");
 		
 		Smartphone smart = new Smartphone();
 		
@@ -33,10 +34,8 @@ public class SmartphonesDAO {
 				smart.setSistemaOperativo(rs.getString(6));
 			} else if (nombreCaracteristica.equals("Procesador")) {
 				smart.setProcesador(rs.getString(6));
-				
 			} else if (nombreCaracteristica.equals("Pulgadas Pantalla")) {
 				smart.setpulgadasPantalla(rs.getInt(6));
-				
 			} else if (nombreCaracteristica.equals("Tipo de Pantalla")) {
 				smart.setTipoDePantalla(rs.getString(6));
 			} else if (nombreCaracteristica.equals("Resolucion de Pantalla")) {

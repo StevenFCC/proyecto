@@ -20,14 +20,25 @@ public class ElectrodomesticosControllers {
 	private final ElectrodomesticosServices service = new ElectrodomesticosServices();
 	
 	@GET
+	@Path("/a/{id}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public CocinaDeGas get(@PathParam ("id") String id) {
+		CocinaDeGas coci = new CocinaDeGas();
+		coci.setCantidadDeHornallas(Integer.valueOf(id));
+		coci.setConsumoEnergetico(2);
+		coci.setEficienciaEnergetica("A");
+		return coci;
+	} 
+	
+	@GET
 	@Path("/cocina/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public CocinaDeGas getCocinas(@PathParam("id") String idArtefacto) {
+	public CocinaDeGas getCocina(@PathParam("id") int idArtefacto) {
 	
-		CocinaDeGas coci = null;
+		CocinaDeGas coci = new CocinaDeGas();
 		
 		try {
-			coci = service.getCocina(Integer.valueOf(idArtefacto));
+			coci = service.getCocina(idArtefacto);
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 			throw new RuntimeException();

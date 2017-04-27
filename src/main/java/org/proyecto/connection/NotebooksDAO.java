@@ -13,8 +13,8 @@ public class NotebooksDAO {
 		
 		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
-		String select = "SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, electrodomesticos.descripcion_caracteristica, caracteristicas.unidad_de_medida";
-		String from = "FROM productosventas.electrodomesticos";
+		String select = "SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, notebooks.descripcion_caracteristica, caracteristicas.unidad_de_medida";
+		String from = "FROM productosventas.notebooks";
 		String join = "join caracteristicas on caracteristicas.id = caracteristica_id";
 		String join2 = "join artefactos on artefactos.id = artefacto_id";
 		String where = "where artefactos.id = " + idArtefacto + ";";
@@ -44,13 +44,9 @@ public class NotebooksDAO {
 				note.setTipoDeDisco(rs.getString(6));
 			} else if (nombreCaracteristica.equals("Capacidad de Disco")) {
 				note.setCapacidadDeDisco(rs.getString(6));
-			} 
-			
-			else if (nombreCaracteristica.equals("Pulgadas Pantalla")) {
+			} else if (nombreCaracteristica.equals("Pulgadas Pantalla")) {
 				note.setPulgadasPantalla(rs.getInt(6));
-			} 
-			
-			else if (nombreCaracteristica.equals("Resolucion de Pantalla")) {
+			} else if (nombreCaracteristica.equals("Resolucion de Pantalla")) {
 				note.setResolucionDePantalla(rs.getString(6));
 			} else if (nombreCaracteristica.equals("Cantidad de Puertos USB")) {
 				note.setCantidadDePuertosUsb(rs.getInt(6));

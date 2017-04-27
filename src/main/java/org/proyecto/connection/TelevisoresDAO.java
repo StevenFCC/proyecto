@@ -17,8 +17,8 @@ public class TelevisoresDAO {
 		String from = "FROM productosventas.televisores";
 		String join = "join caracteristicas on caracteristicas.id = caracteristica_id";
 		String join2 = "join artefactos on artefactos.id = artefacto_id";
-		String where = "where artefactos.id = " + idArtefacto;
-		ResultSet rs = st.executeQuery(select + " " + from + " " + join + " " +  join2 + " " + where + ";");
+		String where = "where artefactos.id = ";
+		ResultSet rs = st.executeQuery(select + " " + from + " " + join + " " +  join2 + " " + where + idArtefacto + ";");
 		
 		Televisor tele = new Televisor();
 		
