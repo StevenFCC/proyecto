@@ -13,7 +13,11 @@ public class SmartphonesDAO {
 		
 		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
-		ResultSet rs = st.executeQuery("SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, smartphones.descripcion_caracteristica, caracteristicas.unidad_de_medida FROM productosventas.smartphones join caracteristicas on caracteristicas.id = caracteristica_id join artefactos on artefactos.id = artefacto_id where artefactos.id = " + idArtefacto);
+		String select = "SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, smartphones.descripcion_caracteristica, caracteristicas.unidad_de_medida";
+		String from = "FROM productosventas.smartphones";
+		String join = "join caracteristicas on caracteristicas.id = caracteristica_id";
+		String join2 = "join artefactos on artefactos.id = artefacto_id where artefactos.id = ";
+		ResultSet rs = st.executeQuery(select + " " + from + " " + join + " " + join2 + idArtefacto + ";");
 		
 		Smartphone smart = new Smartphone();
 		

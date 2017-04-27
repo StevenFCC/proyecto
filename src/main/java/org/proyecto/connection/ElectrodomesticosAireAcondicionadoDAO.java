@@ -13,19 +13,19 @@ public class ElectrodomesticosAireAcondicionadoDAO {
 		
 		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
-		String select = "SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, electrodomesticos.descripcion_caracteristica, caracteristicas.unidad_de_medida FROM productosventas.electrodomesticos";
-		String join = "join caracteristicas on caracteristicas.id = caracteristica_id join artefactos on artefactos.id = artefacto_id";
-		String where = "where artefactos.id = " + idArtefacto + ";";
-		ResultSet rs = st.executeQuery(select + " " + join + " " + where);
+		String select = "SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, electrodomesticos.descripcion_caracteristica, caracteristicas.unidad_de_medida";
+		String from = "FROM productosventas.electrodomesticos";
+		String join = "join caracteristicas on caracteristicas.id = caracteristica_id";
+		String join2 = "join artefactos on artefactos.id = artefacto_id";
+		String where = "where artefactos.id = " + idArtefacto;
+		ResultSet rs = st.executeQuery(select + " " + from + " " + join + " " + join2 + " " + where + ";");
 		
 		AireAcondicionado aire = new AireAcondicionado();
 		
 		while (rs.next()) {
-			String marca = rs.getString(3);
-			aire.setMarca(marca);
 			
-			String modelo = rs.getString(4);
-			aire.setModelo(modelo);
+			aire.setMarca(rs.getString(3));
+			aire.setModelo(rs.getString(4));
 			
 			String nombreDeCaracteristica = rs.getString(5);
 			

@@ -32,9 +32,7 @@ public class Artefacto {
 	}
 
 	
-	public Artefacto(String nombre, String marca, String modelo) {
-		setModelo(nombre);
-		setMarca(marca);
-		setModelo(modelo);
+	public Artefacto() {
+		
 	}
 }

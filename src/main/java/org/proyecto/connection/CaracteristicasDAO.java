@@ -20,6 +20,7 @@ public class CaracteristicasDAO {
 		Caracteristica caracteristica = null;
 		
 		if(rs.next()) {
+			
 			String nombreDeCaracteristica = rs.getString(2);
 			String unidadDeMedida = rs.getString(3);
 				
@@ -27,6 +28,7 @@ public class CaracteristicasDAO {
 			
 			JDBCConnection.closeConnectionToDataBase(con);
 		}
+		
 		return caracteristica;
 	}
 }

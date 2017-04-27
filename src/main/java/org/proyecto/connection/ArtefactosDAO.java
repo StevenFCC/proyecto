@@ -14,17 +14,16 @@ public class ArtefactosDAO {
 	Statement st = con.createStatement();
 	ResultSet rs = st.executeQuery("select * from artefactos where id = " + idDeArtefacto);
 	
-	Artefacto artefacto = null;
+	Artefacto artefacto = new Artefacto();
 	
 	if(rs.next()) {
-		String nombre = rs.getString(2);
-		String marca = rs.getString(3);
-		String modelo = rs.getString(4);
-		
-		artefacto = new Artefacto(nombre, marca, modelo);
+		artefacto.setNombre(rs.getString(2));
+		artefacto.setMarca(rs.getString(3));
+		artefacto.setModelo(rs.getString(4));
 		
 		JDBCConnection.closeConnectionToDataBase(con);
 	}
+	
 	return artefacto;
 	}
 }
