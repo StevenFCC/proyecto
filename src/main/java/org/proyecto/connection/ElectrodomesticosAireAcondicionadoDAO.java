@@ -57,9 +57,10 @@ public class ElectrodomesticosAireAcondicionadoDAO {
 				aire.setImagen(rs.getString(6));
 			}
 			
-			JDBCConnection.closeConnectionToDataBase(con);
+			
 		}
-				
+	
+	JDBCConnection.closeConnectionToDataBase(con);
 	return aire;
 	}
 }

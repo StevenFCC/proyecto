@@ -17,8 +17,8 @@ public class NotebooksDAO {
 		String from = "FROM productosventas.notebooks";
 		String join = "join caracteristicas on caracteristicas.id = caracteristica_id";
 		String join2 = "join artefactos on artefactos.id = artefacto_id";
-		String where = "where artefactos.id = " + idArtefacto + ";";
-		ResultSet rs = st.executeQuery(select + " " + from + " " + join + " " + join2 + " " + where);
+		String where = "where artefactos.id = ";
+		ResultSet rs = st.executeQuery(select + " " + from + " " + join + " " + join2 + " " + where + idArtefacto + ";");
 		
 		Notebook note = new Notebook();
 		
@@ -63,10 +63,9 @@ public class NotebooksDAO {
 			} else if (nombreCaracteristica.equals("Direccion de Imagen")) {
 				note.setImagen(rs.getString(6));
 			}
-			
-			JDBCConnection.closeConnectionToDataBase(con);
 		}
-		
+	
+	JDBCConnection.closeConnectionToDataBase(con);
 	return note;
 	}
 }

@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class JDBCConnection {
 	
-	private static final String userName = "admin";
-	private static final String password = "admin$$";
-	private static final String connectionURI = "jdbc:mysql://localhost:3306/productosVentas?autoReconnect=true&useSSL=false";
+	private static final String userName = "root";
+	private static final String password = "root";
+	private static final String connectionURI = "jdbc:mysql://localhost:3306/productosventas?autoReconnect=true&useSSL=false&serverTimezone=UTC";
 
 	public static Connection connectToDataBase() throws SQLException {
 		Connection con = DriverManager.getConnection(connectionURI, userName, password);

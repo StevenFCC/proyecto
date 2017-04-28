@@ -14,11 +14,12 @@ public class ElectrodomesticosCocinaDeGasDAO {
 		
 		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
-		//String select = "SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, electrodomesticos.descripcion_caracteristica, caracteristicas.unidad_de_medida FROM productosventas.electrodomesticos";
-		//String join = "join caracteristicas on caracteristicas.id = caracteristica_id";
-		//String join2 = "join artefactos on artefactos.id = artefacto_id";
-		//String where = "where artefactos.id = " + idArtefacto + ";";
-		ResultSet rs = st.executeQuery("SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, electrodomesticos.descripcion_caracteristica, caracteristicas.unidad_de_medida FROM productosventas.electrodomesticos join caracteristicas on caracteristicas.id = caracteristica_id join artefactos on artefactos.id = artefacto_id where artefactos.id = " + idArtefacto + ";");
+		String select = "SELECT artefactos.id, artefactos.nombre, artefactos.marca, artefactos.modelo, caracteristicas.nombre_de_caracteristica, electrodomesticos.descripcion_caracteristica, caracteristicas.unidad_de_medida";
+		String from = "FROM productosventas.electrodomesticos";
+		String join = "join caracteristicas on caracteristicas.id = caracteristica_id";
+		String join2 = "join artefactos on artefactos.id = artefacto_id";
+		String where = "where artefactos.id = ";
+		ResultSet rs = st.executeQuery(select + " " + from + " " + join + " " + join2 + " " + where + " " + idArtefacto + ";");
 		
 		CocinaDeGas cocinaDeGas = new CocinaDeGas();
 		
@@ -47,9 +48,9 @@ public class ElectrodomesticosCocinaDeGasDAO {
 				cocinaDeGas.setImagen(rs.getString(6));
 			}
 			
-			JDBCConnection.closeConnectionToDataBase(con);
+			
 		}
-		
+		JDBCConnection.closeConnectionToDataBase(con);
 	return cocinaDeGas;
 	}
 }

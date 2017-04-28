@@ -44,10 +44,9 @@ public class TelevisoresDAO {
 			} else if (nombreCaracteristica.equals("Direccion de Imagen")) {
 				tele.setImagen(rs.getString(6));
 			}
-			
-			JDBCConnection.closeConnectionToDataBase(con);
 		}
 	
+	JDBCConnection.closeConnectionToDataBase(con);
 	return tele;
 	}
 }

@@ -8,24 +8,23 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.proyecto.entities.Notebook;
-import org.proyecto.sevices.NotebooksServices;
+import org.proyecto.entities.Artefacto;
+import org.proyecto.sevices.ArtefactosServices;
 
+@Path("artefactos")
+public class ArtefactosController {
 
-@Path("notebooks")
-public class NotebooksControllers {
-		
-	private final NotebooksServices service = new NotebooksServices();
-		
+	private final ArtefactosServices services = new ArtefactosServices();
+	
 	@GET
-	@Path("/notebook/{id}")
+	@Path("artefacto/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Notebook getNote(@PathParam("id") String idArtefacto) {
+	public Artefacto getArtefacto(@PathParam ("id") int idArtefacto) {
 		
-		Notebook note = null;
-			
+		Artefacto artefacto = new Artefacto();
+		
 		try {
-			note = service.getNote(Integer.valueOf(idArtefacto));
+			artefacto = services.getArt(idArtefacto);
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 			throw new RuntimeException();
@@ -33,7 +32,7 @@ public class NotebooksControllers {
 			e.printStackTrace();
 			throw new RuntimeException();
 		}
-			
-		return note;
+		
+		return artefacto;
 	}
 }

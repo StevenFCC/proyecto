@@ -29,7 +29,7 @@ public class SmartphonesDAO {
 			String nombreCaracteristica = rs.getString(5);
 			
 			if (nombreCaracteristica.equals("Medidas")) {
-				smart.setCamara(rs.getInt(6));
+				smart.setMedidas(rs.getString(6));
 			} else if (nombreCaracteristica.equals("Sistema Operativo")) {
 				smart.setSistemaOperativo(rs.getString(6));
 			} else if (nombreCaracteristica.equals("Procesador")) {
@@ -59,10 +59,9 @@ public class SmartphonesDAO {
 			} else if (nombreCaracteristica.equals("Direccion de Imagen")) {
 				smart.setImagen(rs.getString(6));
 			}
-		
-		JDBCConnection.closeConnectionToDataBase(con);
 		}
-		
+	
+	JDBCConnection.closeConnectionToDataBase(con);
 	return smart;
 	}
 }

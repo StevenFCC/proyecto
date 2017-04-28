@@ -12,7 +12,7 @@ public class ArtefactosDAO {
 	public Artefacto getArtefacto(int idDeArtefacto) throws SQLException {
 	Connection con = JDBCConnection.connectToDataBase();
 	Statement st = con.createStatement();
-	ResultSet rs = st.executeQuery("sele1ct * from artefactos where id = " + idDeArtefacto + ";");
+	ResultSet rs = st.executeQuery("SELECT * FROM artefactos where id = " + idDeArtefacto + ";");
 	
 	Artefacto artefacto = new Artefacto();
 	
@@ -20,10 +20,9 @@ public class ArtefactosDAO {
 		artefacto.setNombre(rs.getString(2));
 		artefacto.setMarca(rs.getString(3));
 		artefacto.setModelo(rs.getString(4));
-		
-		JDBCConnection.closeConnectionToDataBase(con);
 	}
 	
+	JDBCConnection.closeConnectionToDataBase(con);
 	return artefacto;
 	}
 }

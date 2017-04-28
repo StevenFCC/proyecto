@@ -42,10 +42,9 @@ public class ElectrodomesticosVentiladorDAO {
 			} else if (nombreCaracteristica.equals("Numero de Velocidades")) {
 				venti.setNumeroDeVelocidades(rs.getInt(6));
 			}
-			
-			JDBCConnection.closeConnectionToDataBase(con);
 		}
-		
+	
+	JDBCConnection.closeConnectionToDataBase(con);
 	return venti;
 	}
 }

@@ -44,7 +44,7 @@ public class ElectrodomesticosControllers {
 			throw new RuntimeException();
 		} catch (SQLException e) {
 			e.printStackTrace();
-			throw new RuntimeException();
+			throw new RuntimeException(e);
 		}
 		
 		return coci;
