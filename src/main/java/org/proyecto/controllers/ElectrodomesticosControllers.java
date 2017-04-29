@@ -20,17 +20,6 @@ public class ElectrodomesticosControllers {
 	private final ElectrodomesticosServices service = new ElectrodomesticosServices();
 	
 	@GET
-	@Path("/a/{id}")
-	@Produces(MediaType.APPLICATION_JSON)
-	public CocinaDeGas get(@PathParam ("id") String id) {
-		CocinaDeGas coci = new CocinaDeGas();
-		coci.setCantidadDeHornallas(Integer.valueOf(id));
-		coci.setConsumoEnergetico(2);
-		coci.setEficienciaEnergetica("A");
-		return coci;
-	} 
-	
-	@GET
 	@Path("/cocina/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public CocinaDeGas getCocina(@PathParam("id") int idArtefacto) {

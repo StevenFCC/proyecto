@@ -3,6 +3,7 @@ package org.proyecto.entities;
 public class Caracteristica {
 	
 	protected String nombreDeCaracteristica;
+	protected String valorDeCaracteristica;
 	protected String unidadDeMedida;
 	
 
@@ -22,8 +23,15 @@ public class Caracteristica {
 		this.unidadDeMedida = unidadDeMedida;
 	}
 	
-	public Caracteristica(String nombreDeCaracteristica, String unidadDeMedida) {
-		setNombreDeCaracteristica(nombreDeCaracteristica);
-		setUnidadDeMedida(unidadDeMedida);
+	public String getValorDeCaracteristica() {
+		return valorDeCaracteristica;
+	}
+
+	public void setValorDeCaracteristica(String valorDeCaracteristica) {
+		this.valorDeCaracteristica = valorDeCaracteristica;
+	}
+
+	public Caracteristica() {
+		
 	}
 }
