@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>INICIO</title>
+	<link rel="stylesheet" href="../css/estilosDePaginaDeInicio.css"></link>
+	<script type="text/javascript" src="../js/paginaDeInicio.js"></script>
+</head>
+
+<body>
+	<div class="divDeNombrePagina">
+	<p class="pNombrePagina">NOMBRE DE LA PAGINA</p>
+	<hr class="hrNombrePagina">
+	</div>
+	
+	<div id="filtros">
+		<p class="pFiltros">Filtrar por</p>
+		<div id="filtrosAplicados"></div><hr>
+			
+		<p class="pFiltros">Categorias:</p>
+			<p class="pFiltros"><input type="checkbox" onclick="prueba()"> Cocinas</p>
+			<p class="pFiltros"><input type="checkbox" onclick="creadorDeDivDeProductos()"> Aires Acondicionados</p>
+			<p class="pFiltros"><input type="checkbox" onclick="prueba2()"> Ventiladores</p>
+			<p class="pFiltros"><input type="checkbox" onclick="prueba3()"> Televisores</p>
+			<p class="pFiltros"><input type="checkbox"> Notebooks</p>
+			<p class="pFiltros"><input type="checkbox"> Celulares</p>
+	</div>
+	
+	<div class="divTituloProductos" ">
+		<p class="pTituloProductos">Productos:</p>
+	</div>
+
+	<div id="productosAMostrar">
+	</div>
+</body>
+
+</html>

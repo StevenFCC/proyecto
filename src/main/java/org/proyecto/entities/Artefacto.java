@@ -5,6 +5,7 @@ public class Artefacto {
 	protected String nombre;
 	protected String marca;
 	protected String modelo;
+	protected String imagen;
 
 
 	public String getNombre() {
@@ -31,7 +32,14 @@ public class Artefacto {
 		this.modelo = modelo;
 	}
 
-	
+	public String getImagen() {
+		return imagen;
+	}
+
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+
 	public Artefacto() {
 		
 	}
