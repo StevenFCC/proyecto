@@ -85,7 +85,7 @@ div#filtros {
 	border-radius: 30px;
 }
 
-	.imgDeProductoAMostrar {
+	img {
 		width: 300px;
 		height: 300px;
 		margin-right: 50px;
@@ -94,7 +94,7 @@ div#filtros {
 		margin-bottom: 30px;
 	}
 
-	.aDeProductoAMostrar {
+	a {
 		width: 300px;
 		height: 40px;
 		font-size: 25px;

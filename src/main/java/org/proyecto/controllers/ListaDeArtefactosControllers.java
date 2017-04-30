@@ -13,19 +13,19 @@ import javax.ws.rs.core.MediaType;
 import org.proyecto.entities.Artefacto;
 import org.proyecto.sevices.ArtefactosServices;
 
-@Path("listaDeArtefactos/{nombreDeArtefactos}/{complemento}")
+@Path("listaDeArtefactos/{nombreDeArtefactos}")
 public class ListaDeArtefactosControllers {
 
 	private final ArtefactosServices services = new ArtefactosServices();
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Artefacto> getListaDeArtefactosPorTipo (@PathParam ("nombreDeArtefactos") String nombreDeArtefacto, @PathParam ("complemento") String complemento) {
+	public List<Artefacto> getListaDeArtefactosPorTipo (@PathParam ("nombreDeArtefactos") String nombreDeArtefacto) {
 		
 		List<Artefacto> lista = new ArrayList<Artefacto>();
 		
 		try {
-			lista = services.getListaDeArtefactoPorTipo(nombreDeArtefacto + " " + complemento);
+			lista = services.getListaDeArtefactoPorTipo(nombreDeArtefacto);
 		} catch (SQLException e) {
 			e.printStackTrace();
 			throw new RuntimeException();

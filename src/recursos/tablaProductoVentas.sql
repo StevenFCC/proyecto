@@ -27,7 +27,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (1, 5, 'Gas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (1, 7, 'Multigas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (1, 6, '17599');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (1, 51, 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Whirlpool_WFX56EGDNA.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (1, 51, 'http://localhost:8080/proyecto/imagenes/productos/Whirlpool_WFX56EGDNA.jpg');
 
 /*'Cocina', 'Whirlpool', 'WF560XT'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (2, 2, '91.1 x 59.7 x 65.3');
@@ -36,7 +36,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (2, 5, 'Gas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (2, 7, 'Multigas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (2, 6, '20999');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (2, 51, 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Whirlpool_WF560XT.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (2, 51, 'http://localhost:8080/proyecto/imagenes/productos/Whirlpool_WF560XT.jpg');
 
 /*'Cocina', 'Whirlpool', 'WFX56DX'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (3, 2, '97 x 55 x 61');
@@ -45,7 +45,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (3, 5, 'Gas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (3, 7, 'Multigas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (3, 6, '12499');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (3, 51, 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Whirlpool_WFX56DX.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (3, 51, 'http://localhost:8080/proyecto/imagenes/productos/Whirlpool_WFX56DX.jpg');
 
 /*--------------------*/
 
@@ -56,7 +56,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (4, 5, 'Gas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (4, 7, 'Multigas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (4, 6, '7999');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (4, 51, 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Patrick_CPF8251MVS.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (4, 51, 'http://localhost:8080/proyecto/imagenes/productos/Patrick_CPF8251MVS.jpg');
 
 /*'Cocina', 'Patrick', 'CPF2251BVS'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (5, 2, '85x50.5x60');
@@ -65,7 +65,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (5, 5, 'Gas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (5, 7, 'Multigas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (5, 6, '7999');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (5, 51, 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Patrick_CPF2251BVS.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (5, 51, 'http://localhost:8080/proyecto/imagenes/productos/Patrick_CPF2251BVS.jpg');
 
 /*'Cocina', 'Patrick', 'CPF9651MVS'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (6, 2, '86 x 52 x 62.5');
@@ -74,7 +74,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (6, 5, 'Gas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (6, 7, 'Multigas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (6, 6, '8599');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (6, 51, 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Patrick_CPF9651MVS.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (6, 51, 'http://localhost:8080/proyecto/imagenes/productos/Patrick_CPF9651MVS.jpg');
 
 /*--------------------*/
 
@@ -85,7 +85,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (7, 5, 'Gas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (7, 7, 'Gas Natural');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (7, 6, '7880');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (7, 51, 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Domec_CTOBAV.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (7, 51, 'http://localhost:8080/proyecto/imagenes/productos/Domec_CTOBAV.jpg');
 
 /*'Cocina', 'Domec', 'CXUPV'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (8, 2, '85 x 56 x 60');
@@ -94,7 +94,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (8, 5, 'Gas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (8, 7, 'Multigas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (8, 6, '8499');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (8, 51, 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Domec_CXUPV.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (8, 51, 'http://localhost:8080/proyecto/imagenes/productos/Domec_CXUPV.jpg');
 
 /*'Cocina', 'Domec', 'CDXULEAV'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (9, 2, '85 x 56 x 60');
@@ -103,7 +103,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (9, 5, 'Gas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (9, 7, 'Multigas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (9, 6, '11499');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (9, 51, 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Domec_CDXULEAV.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (9, 51, 'http://localhost:8080/proyecto/imagenes/productos/Domec_CDXULEAV.jpg');
 
 /*'Cocina', 'Domec', 'CBUPV'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (10, 2, '85 x 56 x 60');
@@ -112,7 +112,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (10, 5, 'Gas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (10, 7, 'Multigas');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (10, 6, '7499');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (10, 51, 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Domec_CBUPV.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (10, 51, 'http://localhost:8080/proyecto/imagenes/productos/Domec_CBUPV.jpg');
 
 /*--------------------*/
 
@@ -129,7 +129,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (11, 13, '47.5 x 66 x 24.2');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (11, 14, '28.5 x 82 x 21.5');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (11, 6, '16499');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (11, 51, 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/Samsung_AR12KSFHCWK.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (11, 51, 'http://localhost:8080/proyecto/imagenes/productos/Samsung_AR12KSFHCWK.jpg');
 
 /*'Aire Acondicionado', 'Samsung', 'AR18KSFHCWK'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (12, 8, 'true');
@@ -144,7 +144,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (12, 13, '63.8 x 88 x 31');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (12, 14, '29.8 x 106.5 x 24.3');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (12, 6, '22799');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (12, 51, 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/Samsung_AR18KSFHCWK.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (12, 51, 'http://localhost:8080/proyecto/imagenes/productos/Samsung_AR18KSFHCWK.jpg');
 	
 /*--------------------*/
 
@@ -161,7 +161,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (13, 13, '65.5 x 87 x 32');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (13, 14, '32.5 x 103 x 25');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (13, 6, '25999');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (13, 51, 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/LG_US-W246CSG4.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (13, 51, 'http://localhost:8080/proyecto/imagenes/productos/LG_US-W246CSG4.jpg');
 
 /*'Aire Acondicionado', 'LG', 'US-W126BRG4'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (14, 8, 'true');
@@ -176,7 +176,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (14, 13, '48.3 x 71.7 x 23');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (14, 14, '28.5 x 88.5 x 21');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (14, 6, '19550');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (14, 51, 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/LG_US-W126BRG4.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (14, 51, 'http://localhost:8080/proyecto/imagenes/productos/LG_US-W126BRG4.jpg');
 
 /*'Aire Acondicionado', 'LG', 'US-W246CRG4'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (15, 8, 'true');
@@ -191,7 +191,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (15, 13, '65.5 x 87 x 32');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (15, 14, '32.5 x 103 x 25');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (15, 6, '29999');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (15, 51, 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/LG_US-W246CRG4.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (15, 51, 'http://localhost:8080/proyecto/imagenes/productos/LG_US-W246CRG4.jpg');
 
 /*--------------------*/
 
@@ -204,7 +204,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 49, 'A');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 13, '38.6 x 60 x 56');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 6, '10999');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 51, 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/BGH_BC23FN.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (16, 51, 'http://localhost:8080/proyecto/imagenes/productos/BGH_BC23FN.jpg');
 
 /*'Aire Acondicionado', 'BGH', 'BC30FN'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 8, 'true');
@@ -215,7 +215,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 49, 'A');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 13, '38.6 x 60 x 56');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 6, '11999');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 51, 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/BGH_BC30FN.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (17, 51, 'http://localhost:8080/proyecto/imagenes/productos/BGH_BC30FN.jpg');
 
 /*--------------------*/
 
@@ -228,7 +228,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 49, 'A');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 13, '38 x 60 x 56');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 6, '8899');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 51, 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/Sanyo_SA916ARN.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (18, 51, 'http://localhost:8080/proyecto/imagenes/productos/Sanyo_SA916ARN.jpg');
 
 /*--------------------*/
 
@@ -238,7 +238,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 3, 'No especificada');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 15, '3');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 6, '899');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 51, 'http://localhost:8080/proyecto/imagenes/Ventiladores/Protalia_V18P.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 51, 'http://localhost:8080/proyecto/imagenes/productos/Protalia_V18P.jpg');
 
 /*--------------------*/
 
@@ -248,7 +248,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 3, 'No especificado');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 15, '3');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 6, '799');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 51, 'http://localhost:8080/proyecto/imagenes/Ventiladores/Sansei_VPS1030.jpg');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 51, 'http://localhost:8080/proyecto/imagenes/productos/Sansei_VPS1030.jpg');
 
 /*--------------------*/
 
@@ -766,28 +766,28 @@ where id = 1;*/
 
 
 /*Electrodomesticos:*/
-insert into artefactos values (1, 'Cocina', 'Whirlpool', 'WFX56EGDNA', 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Whirlpool_WFX56EGDNA.jpg');
-insert into artefactos values (2, 'Cocina', 'Whirlpool', 'WF560XT', 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Whirlpool_WF560XT.jpg');
-insert into artefactos values (3, 'Cocina', 'Whirlpool', 'WFX56DX', 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Whirlpool_WFX56DX.jpg');
-insert into artefactos values (4, 'Cocina', 'Patrick', 'CPF8251MVS', 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Patrick_CPF8251MVS.jpg');
-insert into artefactos values (5, 'Cocina', 'Patrick', 'CPF2251BVS', 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Patrick_CPF2251BVS.jpg');
-insert into artefactos values (6, 'Cocina', 'Patrick', 'CPF9651MVS', 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Patrick_CPF9651MVS.jpg');
-insert into artefactos values (7, 'Cocina', 'Domec', 'CTOBAV', 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Domec_CTOBAV.jpg');
-insert into artefactos values (8, 'Cocina', 'Domec', 'CXUPV', 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Domec_CXUPV.jpg');
-insert into artefactos values (9, 'Cocina', 'Domec', 'CDXULEAV', 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Domec_CDXULEAV.jpg');
-insert into artefactos values (10, 'Cocina', 'Domec', 'CBUPV', 'http://localhost:8080/proyecto/imagenes/CocinasDeGas/Domec_CBUPV.jpg');
+insert into artefactos values (1, 'Cocina', 'Whirlpool', 'WFX56EGDNA', 'http://localhost:8080/proyecto/imagenes/productos/Whirlpool_WFX56EGDNA.jpg');
+insert into artefactos values (2, 'Cocina', 'Whirlpool', 'WF560XT', 'http://localhost:8080/proyecto/imagenes/productos/Whirlpool_WF560XT.jpg');
+insert into artefactos values (3, 'Cocina', 'Whirlpool', 'WFX56DX', 'http://localhost:8080/proyecto/imagenes/productos/Whirlpool_WFX56DX.jpg');
+insert into artefactos values (4, 'Cocina', 'Patrick', 'CPF8251MVS', 'http://localhost:8080/proyecto/imagenes/productos/Patrick_CPF8251MVS.jpg');
+insert into artefactos values (5, 'Cocina', 'Patrick', 'CPF2251BVS', 'http://localhost:8080/proyecto/imagenes/productos/Patrick_CPF2251BVS.jpg');
+insert into artefactos values (6, 'Cocina', 'Patrick', 'CPF9651MVS', 'http://localhost:8080/proyecto/imagenes/productos/Patrick_CPF9651MVS.jpg');
+insert into artefactos values (7, 'Cocina', 'Domec', 'CTOBAV', 'http://localhost:8080/proyecto/imagenes/productos/Domec_CTOBAV.jpg');
+insert into artefactos values (8, 'Cocina', 'Domec', 'CXUPV', 'http://localhost:8080/proyecto/imagenes/productos/Domec_CXUPV.jpg');
+insert into artefactos values (9, 'Cocina', 'Domec', 'CDXULEAV', 'http://localhost:8080/proyecto/imagenes/productos/Domec_CDXULEAV.jpg');
+insert into artefactos values (10, 'Cocina', 'Domec', 'CBUPV', 'http://localhost:8080/proyecto/imagenes/productos/Domec_CBUPV.jpg');
     
-insert into artefactos values (11, 'Aire Acondicionado', 'Samsung', 'AR12KSFHCWK', 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/Samsung_AR12KSFHCWK.jpg');
-insert into artefactos values (12, 'Aire Acondicionado', 'Samsung', 'AR18KSFHCWK', 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/Samsung_AR18KSFHCWK.jpg');
-insert into artefactos values (13, 'Aire Acondicionado', 'LG', 'US-W246CSG4', 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/LG_US-W246CSG4.jpg');
-insert into artefactos values (14, 'Aire Acondicionado', 'LG', 'US-W126BRG4', 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/LG_US-W126BRG4.jpg');
-insert into artefactos values (15, 'Aire Acondicionado', 'LG', 'US-W246CRG4', 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/LG_US-W246CRG4.jpg');
-insert into artefactos values (16, 'Aire Acondicionado', 'BGH', 'BC23FN', 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/BGH_BC23FN.jpg');
-insert into artefactos values (17, 'Aire Acondicionado', 'BGH', 'BC30FN', 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/BGH_BC30FN.jpg');
-insert into artefactos values (18, 'Aire Acondicionado', 'Sanyo', 'SA916ARN', 'http://localhost:8080/proyecto/imagenes/AiresAcondicionados/Sanyo_SA916ARN.jpg');
+insert into artefactos values (11, 'Aire Acondicionado', 'Samsung', 'AR12KSFHCWK', 'http://localhost:8080/proyecto/imagenes/productos/Samsung_AR12KSFHCWK.jpg');
+insert into artefactos values (12, 'Aire Acondicionado', 'Samsung', 'AR18KSFHCWK', 'http://localhost:8080/proyecto/imagenes/productos/Samsung_AR18KSFHCWK.jpg');
+insert into artefactos values (13, 'Aire Acondicionado', 'LG', 'US-W246CSG4', 'http://localhost:8080/proyecto/imagenes/productos/LG_US-W246CSG4.jpg');
+insert into artefactos values (14, 'Aire Acondicionado', 'LG', 'US-W126BRG4', 'http://localhost:8080/proyecto/imagenes/productos/LG_US-W126BRG4.jpg');
+insert into artefactos values (15, 'Aire Acondicionado', 'LG', 'US-W246CRG4', 'http://localhost:8080/proyecto/imagenes/productos/LG_US-W246CRG4.jpg');
+insert into artefactos values (16, 'Aire Acondicionado', 'BGH', 'BC23FN', 'http://localhost:8080/proyecto/imagenes/productos/BGH_BC23FN.jpg');
+insert into artefactos values (17, 'Aire Acondicionado', 'BGH', 'BC30FN', 'http://localhost:8080/proyecto/imagenes/productos/BGH_BC30FN.jpg');
+insert into artefactos values (18, 'Aire Acondicionado', 'Sanyo', 'SA916ARN', 'http://localhost:8080/proyecto/imagenes/productos/Sanyo_SA916ARN.jpg');
     
-insert into artefactos values (19, 'Ventiladores', 'Protalia', 'V18P', 'http://localhost:8080/proyecto/imagenes/Ventiladores/Protalia_V18P.jpg');
-insert into artefactos values (20, 'Ventiladores', 'Sansei', 'VPS1030', 'http://localhost:8080/proyecto/imagenes/Ventiladores/Sansei_VPS1030.jpg');
+insert into artefactos values (19, 'Ventiladores', 'Protalia', 'V18P', 'http://localhost:8080/proyecto/imagenes/productos/Protalia_V18P.jpg');
+insert into artefactos values (20, 'Ventiladores', 'Sansei', 'VPS1030', 'http://localhost:8080/proyecto/imagenes/productos/Sansei_VPS1030.jpg');
 
 
 /*Televisores:*/
