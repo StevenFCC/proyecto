@@ -1,4 +1,4 @@
-.divCompra {
+.divRegistro {
 	width: 600px;
 	height: 475px;
 	background-color: white;
@@ -9,35 +9,26 @@
 	border-radius: 40px;
 }
 
-	.pTituloCompra {
+	.pRegistro {
 		padding-top: 20px;
 		padding-left: 20px;
 		font-size: 30px;
-		margin-bottom: 0px;
 	}
 
-	.pCompra {
-		padding-top: 10px;
-		padding-left: 20px;
-		font-size: 30px;
-		margin-top: 0px;
-		margin-bottom: 30px;
-	}
-
-	.inputConcretarCompra {
-		height: 50px;
-		margin-top: 40px;
-		margin-left: 191px;
-		margin-right: 191px;
-		margin-bottom: 5px;
-		font-size: 25px;
-	}
-
-	.divDatosIncorrectos {
+	.divEstadoDeRegistro {
 		height: 50px;
 		width: 580px;
 		margin-top: 0px;
 		margin-left: 10px;
 		margin-right: 10px;
 		margin-bottom: 0px;
+	}
+
+	.inputCrearNuevoUsuario {
+		height: 50px;
+		margin-top: 50px;
+		margin-left: 172px;
+		margin-right: 172px;
+		margin-bottom: 5px;
+		font-size: 25px;
 	}

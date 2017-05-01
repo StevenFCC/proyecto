@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title id="title">Crear Nuevo Usuario</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilosDePaginaGeneral.css"></link>
+	<link rel="stylesheet" type="text/css" href="../css/estilosDePaginaDeRegistroDeNuevoUsuario.css"></link>
+	<script type="text/javascript" src="../js/paginaDeRegistroDeNuevoUsuario.js"></script>
+</head>
+
+<body>
+	<div class="divDeNombrePagina">
+	<p class="pNombrePagina">ELECTRO STORE</p>
+	<hr class="hrNombrePagina">
+	</div>
+
+	<div class="divRegistro">
+		<p class="pRegistro">Ingrese un nombre de Usuario y una Clave para registrarse</p>
+		<p class="pRegistro">Nombre de Usuario <input type="text" id="nombreDeUsuario"></p>
+		<p class="pRegistro">Clave <input type="password" id="claveDeUsuario"></p>
+		
+		<div id="estadoDeRegistro" class="divEstadoDeRegistro">
+		</div>
+
+		<input type="button" value="Crear nuevo Usuario" class="inputCrearNuevoUsuario" onclick="insertarNuevoUsuarioEnLaBaseDeDatos()">
+	</div>
+</body>
+
+</html>

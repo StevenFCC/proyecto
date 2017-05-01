@@ -1,37 +1,3 @@
-html {
-	width: 2500px;
-	height: 1500px;
-}
-
-body {
-	background-color: #33327F;
-	font-family: Helvetica, "MS Verdana", sans-serif;
-	width: 2000px;
-	height: 1500px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-}
-
-.divDeNombrePagina {
-	height: 125px;
-	width: 2000px;
-	background-color: black;
-}
-	.pNombrePagina {
-		font-size: 50px;
-		color: white;
-		margin-top: 0px;
-		margin-bottom: 0px;
-		padding: 15px 10px 15px 10px;
-	}
-
-	.hrNombrePagina {
-		margin-right: 10px;
-		margin-left: 10px;
-	}
-
 div#filtros {
 	width: 310px;
 	height: 1200px;
