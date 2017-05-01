@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title id="nombreDePagina">Recibir nombre</title>
-	<link rel="stylesheet" href="../css/estilosDePaginaDeInicio.css"></link>
-	<link rel="stylesheet" href="../css/estilosDePaginaDeProducto.css"></link>
+	<title id="nombreDePagina">PRODUCTO</title>
+	<!--<link rel="stylesheet" href="../css/estilosDePaginaDeInicio.css"></link>
+	<link rel="stylesheet" href="../css/estilosDePaginaDeProducto.css"></link>-->
+	<link rel="stylesheet" type="text/css" href="http://localhost:8080/proyecto/css/estilosDePaginaDeInicio.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8080/proyecto/css/estilosDePaginaDeProducto.css">
+	<script type="text/javascript" src="../js/paginaDeProducto.js"></script>
 </head>
-<body>
+
+<body onload="caracteristicasDeProducto('12')">
 	<div class="divDeNombrePagina">
-	<p class="pNombrePagina">NOMBRE DE LA PAGINA</p>
+	<p class="pNombrePagina">ELECTRO STORE</p>
 	<hr class="hrNombrePagina">
 	</div>
 
 	<div class="divImagenProducto">
-		<img class="imgProducto" src="asas">	
-	</div>
-
-	<div class="divPrecio">
-		<p class="pPrecioTitulo">Precio:</p><p class="pPrecioSignoYNumero">$</p><p p class="pPrecioSignoYNumero" id="precio">00000</p>
-		<input type="button" value="+" class="inputBotonMasYMenos">
-		<input type="button" value="-" class="inputBotonMasYMenos">
-		<input type="button" value="Comprar" class="inputComprar">	
+		<img id="imagenDeProducto" class="imgProducto">	
 	</div>
 
 	<div class="divCaracteristicasProducto" id="caracteristicasProducto">
-		<p class="pCaracteristicasGenerales">Caracteristicas Generales:</p>
+		<p class="pCaracteristicas">Caracteristicas:</p>
 	</div>
 
-	<div class="divDescripcion" id="descripcion">
-	<p class="pDescripcion"> Descripcion:</p>
+	<div class="divPrecio">
+		<p class="pPrecioTitulo">Precio:</p>
+		<p class="pPrecioSignoYNumero">$</p>
+		<div id="precio"></div>
+		<input type="button" value="Comprar" class="inputComprar">	
 	</div>
 </body>
+
 </html>
