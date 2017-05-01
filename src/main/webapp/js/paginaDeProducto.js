@@ -16,9 +16,9 @@ function agregarPrecio (precio) {
 	crearTagP.appendChild(valorPrecio);
 }
 
-function tomarYSetearImg (link) {
+function tomarYSetearImg (src) {
 	var tomarImg = document.getElementById('imagenDeProducto')
-	tomarImg.setAttribute("src", link);
+	tomarImg.setAttribute("src", src);
 }
 
 function creadorDeInputsTypeCheckbox (propiedad, estadoDeChecked) {
@@ -49,6 +49,11 @@ function caracteristicasDeProducto(idDeArtefacto) {
 			
 			var lista = xhr.responseText;
 			obj = JSON.parse(lista);
+
+			var marca = "Marca: " + obj.artefacto.marca;
+			itemDeCaracteristica(marca);
+			var modelo = "Modelo: " + obj.artefacto.modelo;
+			itemDeCaracteristica(modelo);
 
 			for (var contador = 0; contador < lista.length; contador++) {
 				
@@ -85,10 +90,16 @@ function caracteristicasDeProducto(idDeArtefacto) {
 					agregarPrecio(texto);
 				}
 
-				if (limitadorPorValor == "true" || limitadorPorValor == "false") {
+				if (limitadorPorValor == "true") {
 					var propiedad = obj.listaDeCaracteristicas[contador].nombreDeCaracteristica + ": ";
-					var estadoDeChecked = obj.listaDeCaracteristicas[contador].valorDeCaracteristica;
-					creadorDeInputsTypeCheckbox(propiedad, estadoDeChecked);
+					//var estadoDeCheckedValor = obj.listaDeCaracteristicas[contador].valorDeCaracteristica;
+					creadorDeInputsTypeCheckbox(propiedad, true);
+				}
+
+				if (limitadorPorValor == "false") {
+					var propiedad = obj.listaDeCaracteristicas[contador].nombreDeCaracteristica + ": ";
+					//var estadoDeCheckedValor = obj.listaDeCaracteristicas[contador].valorDeCaracteristica;
+					creadorDeInputsTypeCheckbox(propiedad, false);
 				}
 			}
 		}
