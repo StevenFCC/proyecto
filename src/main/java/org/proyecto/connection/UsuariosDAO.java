@@ -10,7 +10,7 @@ import org.proyecto.entities.Usuario;
 public class UsuariosDAO {
 
 	public void setUsuario(Usuario usuario) throws SQLException {
-		Connection con = JDBCConnection2.connectToDataBase();
+		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
 		String queryToExecute = "insert into usuarios (nombre_de_usuario, clave) "
 				+ "values ("
@@ -23,12 +23,12 @@ public class UsuariosDAO {
 		JDBCConnection.closeConnectionToDataBase(con);
 	}
 	
-	public Usuario getUsuario(String nombreDeUsuario) throws SQLException {
+	public Usuario getUsuario(String nombreDeUsuario, String claveDeUsuario) throws SQLException {
 		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
 		String select = "SELECT *";
-		String from = "FROM usuariosyregistrosdecompras.usuarios";
-		String where = "where nombre_de_usuario = " + "'" + nombreDeUsuario + "'";
+		String from = "FROM productosventas.usuarios";
+		String where = "where nombre_de_usuario = " + "'" + nombreDeUsuario + "' and clave = '" + claveDeUsuario + "'";
 		ResultSet rs = st.executeQuery(select + " " + from + " " + where + ";");
 		
 		Usuario usuario = new Usuario();
@@ -37,6 +37,8 @@ public class UsuariosDAO {
 			usuario.setNombreDeUsuario(rs.getString(2));
 			usuario.setClave(rs.getString(3));;
 		}
+		
+		JDBCConnection.closeConnectionToDataBase(con);
 		
 		return usuario;
 	}

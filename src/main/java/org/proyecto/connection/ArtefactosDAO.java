@@ -19,6 +19,7 @@ public class ArtefactosDAO {
 	Artefacto artefacto = new Artefacto();
 	
 	if(rs.next()) {
+		artefacto.setIdDeArtefacto(rs.getInt(1));
 		artefacto.setNombre(rs.getString(2));
 		artefacto.setMarca(rs.getString(3));
 		artefacto.setModelo(rs.getString(4));
@@ -42,6 +43,7 @@ public class ArtefactosDAO {
 			
 			if (nombreArtefacto.equals("Cocina")) {
 				Artefacto datosDeArtefacto = new Artefacto();
+				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
 				datosDeArtefacto.setNombre(rs.getString(2));
 				datosDeArtefacto.setMarca(rs.getString(3));
 				datosDeArtefacto.setModelo(rs.getString(4));
@@ -51,6 +53,7 @@ public class ArtefactosDAO {
 			
 			else if (nombreArtefacto.equals("Aire Acondicionado")) {
 				Artefacto datosDeArtefacto = new Artefacto();
+				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
 				datosDeArtefacto.setNombre(rs.getString(2));
 				datosDeArtefacto.setMarca(rs.getString(3));
 				datosDeArtefacto.setModelo(rs.getString(4));
@@ -60,6 +63,7 @@ public class ArtefactosDAO {
 			
 			else if (nombreArtefacto.equals("Ventiladores")) {
 				Artefacto datosDeArtefacto = new Artefacto();
+				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
 				datosDeArtefacto.setNombre(rs.getString(2));
 				datosDeArtefacto.setMarca(rs.getString(3));
 				datosDeArtefacto.setModelo(rs.getString(4));
@@ -69,6 +73,7 @@ public class ArtefactosDAO {
 			
 			else if (nombreArtefacto.equals("TV")) {
 				Artefacto datosDeArtefacto = new Artefacto();
+				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
 				datosDeArtefacto.setNombre(rs.getString(2));
 				datosDeArtefacto.setMarca(rs.getString(3));
 				datosDeArtefacto.setModelo(rs.getString(4));
@@ -78,6 +83,7 @@ public class ArtefactosDAO {
 			
 			else if (nombreArtefacto.equals("Notebook")) {
 				Artefacto datosDeArtefacto = new Artefacto();
+				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
 				datosDeArtefacto.setNombre(rs.getString(2));
 				datosDeArtefacto.setMarca(rs.getString(3));
 				datosDeArtefacto.setModelo(rs.getString(4));
@@ -87,6 +93,7 @@ public class ArtefactosDAO {
 			
 			else if (nombreArtefacto.equals("Smartphone")) {
 				Artefacto datosDeArtefacto = new Artefacto();
+				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
 				datosDeArtefacto.setNombre(rs.getString(2));
 				datosDeArtefacto.setMarca(rs.getString(3));
 				datosDeArtefacto.setModelo(rs.getString(4));

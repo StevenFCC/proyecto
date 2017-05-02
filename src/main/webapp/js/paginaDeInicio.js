@@ -102,12 +102,13 @@ function creadorDeProductos(nombreDeArtefactos, id) {
 
 				for ( var contador = 0; contador < lista.length; contador++) {
 					
+					var idDeArtefacto = obj[contador].idDeArtefacto;
 					var nombre = obj[contador].nombre;
 					var marca = obj[contador].marca;
 					var modelo = obj[contador].modelo;
 					var linkDeImagenDeProducto = obj[contador].imagen;
 					var datosDeProductos = nombre + " " + marca + " " + modelo;
-					var link = "http://localhost:8080/proyecto/paginas/paginaDeProducto.html";
+					var link = "http://localhost:8080/proyecto/paginas/paginaDeProducto.html?idDeArtefacto=" + idDeArtefacto;
 					
 					creadorDeDivDeProductos(link, linkDeImagenDeProducto, datosDeProductos);
 				}

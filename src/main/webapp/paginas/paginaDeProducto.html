@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="../js/paginaDeProducto.js"></script>
 </head>
 
-<body onload="caracteristicasDeProducto('18')">
+<body onload="tomarParametrosDelUrl()">
 	<div class="divDeNombrePagina">
 	<p class="pNombrePagina">ELECTRO STORE</p>
 	<hr class="hrNombrePagina">
@@ -28,7 +28,7 @@
 		<p class="pPrecioTitulo">Precio:</p>
 		<p class="pPrecioSignoYNumero">$</p>
 		<div id="precio"></div>
-		<input type="button" value="Comprar" class="inputComprar">	
+		<input type="button" value="Comprar" class="inputComprar" onclick="realizarCompraDeProducto()">	
 	</div>
 </body>
 

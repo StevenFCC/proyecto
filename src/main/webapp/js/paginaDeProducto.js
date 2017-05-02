@@ -1,3 +1,19 @@
+function tomarParametrosDelUrl() {
+	var valorDeParametros = location.search.split("=");
+	var valorDeParametro = valorDeParametros[1];
+	var valorDeParametroConvertido = unescape(valorDeParametro);
+
+	caracteristicasDeProducto(valorDeParametroConvertido);
+}
+
+function realizarCompraDeProducto() {
+	var valorDeParametros = location.search.split("=");
+	var valorDeParametro = valorDeParametros[1];
+	var valorDeParametroConvertido = unescape(valorDeParametro);
+
+	cambiarDePagina(valorDeParametroConvertido);
+}
+
 function itemDeCaracteristica(texto) {
 	var tomarDiv = document.getElementById('caracteristicasProducto');
 	var crearTagP = document.createElement("p")
@@ -37,6 +53,11 @@ function creadorDeInputsTypeCheckbox (propiedad, estadoDeChecked) {
 	crearTagLi.appendChild(crearTagInput);
 
 	tomarDiv.appendChild(crearTagLi);
+}
+
+function cambiarDePagina(idDeArtefacto) {
+	var newUrl = "http://localhost:8080/proyecto/paginas/paginaDeCompraDeProducto.html?idDeArtefacto=" + idDeArtefacto;
+	window.location.replace(newUrl);
 }
 
 function caracteristicasDeProducto(idDeArtefacto) {

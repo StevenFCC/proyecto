@@ -36,14 +36,14 @@ public class UsuariosController {
 	}
 	
 	@GET
-	@Path("/usuario/{name}")
+	@Path("/usuario/{name}/{password}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Usuario getUsuario(@PathParam ("name") String nombreDeUsuario) {
+	public Usuario getUsuario(@PathParam ("name") String nombreDeUsuario, @PathParam ("password") String claveDeUsuario) {
 		
 		Usuario usuario = new Usuario();
 		
 		try {
-			usuario = services.getUsuario(nombreDeUsuario);
+			usuario = services.getUsuario(nombreDeUsuario, claveDeUsuario);
 		} catch (SQLException e) {
 			e.printStackTrace();
 			throw new RuntimeException();

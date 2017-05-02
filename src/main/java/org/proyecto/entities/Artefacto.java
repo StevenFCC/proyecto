@@ -2,11 +2,20 @@ package org.proyecto.entities;
 
 public class Artefacto {
 	
+	protected int idDeArtefacto;
 	protected String nombre;
 	protected String marca;
 	protected String modelo;
 	protected String imagen;
 
+
+	public int getIdDeArtefacto() {
+		return idDeArtefacto;
+	}
+
+	public void setIdDeArtefacto(int idDeArtefacto) {
+		this.idDeArtefacto = idDeArtefacto;
+	}
 
 	public String getNombre() {
 		return nombre;

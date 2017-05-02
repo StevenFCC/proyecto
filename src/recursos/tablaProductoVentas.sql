@@ -398,7 +398,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (31, 31, '2');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (31, 32, '4');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (31, 33, 'false');
-insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (31, 34, '7 Hs');
+insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (31, 34, '7');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (31, 6, '18999');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (31, 51, 'http://localhost:8080/proyecto/imagenes/productos/VAIO_VJF155A0311B.jpg');
 
@@ -907,3 +907,24 @@ insert into caracteristicas values (46, 'Capacidad de Bateria', 'mAmp');
 drop table productos;
 drop table artefactos;
 drop table caracteristicas;
+
+
+
+create table usuarios
+(id int not null primary key auto_increment,
+nombre_de_usuario varchar(50) not null,
+clave varchar(20) not null);
+
+create table usuariosAdministradores
+(id int not null,
+nombre_de_administrador varchar(50) not null,
+clave varchar (20) not null);
+
+create table registroDeCompras
+(id int not null primary key auto_increment,
+usuario_que_realizo_la_compra varchar(50) not null,
+producto_comprado varchar(50) not null);
+
+drop table usuarios;
+drop table usuariosadministradores;
+drop table registrodecompras;

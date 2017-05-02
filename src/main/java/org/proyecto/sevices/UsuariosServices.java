@@ -13,9 +13,9 @@ public class UsuariosServices {
 		dao.setUsuario(usuario);
 	}
 	
-	public Usuario getUsuario(String nombreDeUsuario) throws SQLException {
+	public Usuario getUsuario(String nombreDeUsuario, String claveDeUsuario) throws SQLException {
 		Usuario usuario;
-		usuario = dao.getUsuario(nombreDeUsuario);
+		usuario = dao.getUsuario(nombreDeUsuario, claveDeUsuario);
 		return usuario;
 	}
 }

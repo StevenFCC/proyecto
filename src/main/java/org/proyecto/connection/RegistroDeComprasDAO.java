@@ -10,7 +10,7 @@ import org.proyecto.entities.Usuario;
 public class RegistroDeComprasDAO {
 
 	public void setCompraDeUsuario (Usuario usuario, Artefacto artefacto) throws SQLException {
-		Connection con = JDBCConnection2.connectToDataBase();
+		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
 		String insert = "insert into registrodecompras (usuario_que_realizo_la_compra, producto_comprado)";
 		String values = "values ('" + usuario.getNombreDeUsuario() + "', '" + artefacto.getNombre() + " " + artefacto.getMarca() + " " + artefacto.getModelo() + "')";
