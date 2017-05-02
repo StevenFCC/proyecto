@@ -17,11 +17,11 @@
 	<div class="divCompra">
 		<p class="pTituloCompra">Ingrese su Usuario y Clave para concretar la compra</p>
 		<p class="pCompra">Si no posee un usuario registrese <a href="http://localhost:8080/proyecto/paginas/paginaDeRegistroDeNuevoUsuario.html">aqui</a></p>
-		<p class="pCompra">Usuario <input type="text"> </p>
-		<p class="pCompra">Clave <input type="password"> </p>
+		<p class="pCompra">Usuario <input type="text" id="usuario"> </p>
+		<p class="pCompra">Clave <input type="password" id="clave"> </p>
 		<div id="datosIncorrectos" class="divDatosIncorrectos">
 		</div>
-		<input type="button" value="Concretar Compra" class="inputConcretarCompra">
+		<input type="button" value="Concretar Compra" class="inputConcretarCompra" onclick="pru()">
 	</div>
 </body>
 

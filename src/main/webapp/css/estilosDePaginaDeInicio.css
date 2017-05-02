@@ -64,7 +64,12 @@ div#filtros {
 		width: 300px;
 		height: 40px;
 		font-size: 25px;
-		padding-top: 10px;
-		padding-right: 30px;
-		padding-left: 30px;
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-top: 10px;
+	}
+
+	.divDeA {
+		width: 300px;
+		height: 40px;
 	}

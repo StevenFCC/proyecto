@@ -1,3 +1,33 @@
+function creadorDeCocinas() {
+	controladorDeCheckbox(true, false, false, false, false, false);
+	creadorDeProductos('Cocina', 'cocinas');
+}
+
+function creadorDeAiresAcondicionados() {
+	controladorDeCheckbox(false, true, false, false, false, false);
+	creadorDeProductos('Aire/Acondicionado', 'airesAcondicionados');
+}
+
+function creadorDeVentiladores() {
+	controladorDeCheckbox(false, false, true, false, false, false);
+	creadorDeProductos('Ventilador', 'ventiladores');
+}
+
+function creadorDeTelevisores() {
+	controladorDeCheckbox(false, false, false, true, false, false);
+	creadorDeProductos('TV', 'televisores');
+}
+
+function creadorDeNotebooks() {
+	controladorDeCheckbox(false, false, false, false, true, false);
+	creadorDeProductos('Notebook', 'notebooks');
+}
+
+function creadorDeSmartphones() {
+	controladorDeCheckbox(false, false, false, false, false, true);
+	creadorDeProductos('Smartphone', 'celulares');
+}
+
 function eliminarElementos() {
 
 	var eliminarTodos = document.getElementById("productosAMostrar");
@@ -28,11 +58,31 @@ function creadorDeDivDeProductos(linkDeProducto, linkDeImagenDeProducto, datosDe
 	crearADeProducto.setAttribute("class", "aDeProductoAMostrar");
 	var textoDeA = document.createTextNode(datosDeProductos);
 	crearADeProducto.appendChild(textoDeA);
-	crearDivDeproductos.appendChild(crearADeProducto);
+	var creadorDeDiv = document.createElement("div");
+	creadorDeDiv.setAttribute("class", "divDeA");
+	creadorDeDiv.appendChild(crearADeProducto);
+	crearDivDeproductos.appendChild(creadorDeDiv);
 
 	//Agrega todo al DOM
 	getDivVacio.appendChild(crearDivDeproductos);
 }
+
+function controladorDeCheckbox(e1, e2, e3, e4, e5, e6) {
+	var checkbox1 = document.getElementById("cocinas");
+	var checkbox2 = document.getElementById("airesAcondicionados");
+	var checkbox3 = document.getElementById("ventiladores");
+	var checkbox4 = document.getElementById("televisores");
+	var checkbox5 = document.getElementById("notebooks");
+	var checkbox6 = document.getElementById("celulares");
+
+	checkbox1.checked = e1;
+	checkbox2.checked = e2;
+	checkbox3.checked = e3;
+	checkbox4.checked = e4;
+	checkbox5.checked = e5;
+	checkbox6.checked = e6;
+	
+	}
 
 function creadorDeProductos(nombreDeArtefactos, id) {
 
@@ -57,7 +107,7 @@ function creadorDeProductos(nombreDeArtefactos, id) {
 					var modelo = obj[contador].modelo;
 					var linkDeImagenDeProducto = obj[contador].imagen;
 					var datosDeProductos = nombre + " " + marca + " " + modelo;
-					var link = "file:///C:/Users/pc/proyecto/src/main/webapp/paginas/paginaDeProducto.html";
+					var link = "http://localhost:8080/proyecto/paginas/paginaDeProducto.html";
 					
 					creadorDeDivDeProductos(link, linkDeImagenDeProducto, datosDeProductos);
 				}

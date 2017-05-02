@@ -10,7 +10,6 @@ import org.proyecto.entities.Usuario;
 public class UsuariosDAO {
 
 	public void setUsuario(Usuario usuario) throws SQLException {
-		
 		Connection con = JDBCConnection2.connectToDataBase();
 		Statement st = con.createStatement();
 		String queryToExecute = "insert into usuarios (nombre_de_usuario, clave) "
@@ -24,13 +23,12 @@ public class UsuariosDAO {
 		JDBCConnection.closeConnectionToDataBase(con);
 	}
 	
-	public Usuario getUsuario(int idDeUsuario) throws SQLException {
-		
+	public Usuario getUsuario(String nombreDeUsuario) throws SQLException {
 		Connection con = JDBCConnection.connectToDataBase();
 		Statement st = con.createStatement();
 		String select = "SELECT *";
 		String from = "FROM usuariosyregistrosdecompras.usuarios";
-		String where = "where id = " + idDeUsuario;
+		String where = "where nombre_de_usuario = " + "'" + nombreDeUsuario + "'";
 		ResultSet rs = st.executeQuery(select + " " + from + " " + where + ";");
 		
 		Usuario usuario = new Usuario();

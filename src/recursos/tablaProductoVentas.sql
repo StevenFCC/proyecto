@@ -232,7 +232,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 
 /*--------------------*/
 
-/*'Ventiladores', 'Protalia', 'V18P'*/
+/*'Ventilador', 'Protalia', 'V18P'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 1, '85');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 2, 'Alto 160 y Diametro de ventilador 18"');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (19, 3, 'No especificada');
@@ -242,7 +242,7 @@ insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristi
 
 /*--------------------*/
 
-/*'Ventiladores', 'Sansei', 'VPS1030'*/
+/*'Ventilador', 'Sansei', 'VPS1030'*/
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 1, '45');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 2, 'Alto 170 y Diamtro de ventilador 16"');
 insert into productos (artefacto_id, caracteristica_id, descripcion_caracteristica) values (20, 3, 'No especificado');
@@ -786,8 +786,8 @@ insert into artefactos values (16, 'Aire Acondicionado', 'BGH', 'BC23FN', 'http:
 insert into artefactos values (17, 'Aire Acondicionado', 'BGH', 'BC30FN', 'http://localhost:8080/proyecto/imagenes/productos/BGH_BC30FN.jpg');
 insert into artefactos values (18, 'Aire Acondicionado', 'Sanyo', 'SA916ARN', 'http://localhost:8080/proyecto/imagenes/productos/Sanyo_SA916ARN.jpg');
     
-insert into artefactos values (19, 'Ventiladores', 'Protalia', 'V18P', 'http://localhost:8080/proyecto/imagenes/productos/Protalia_V18P.jpg');
-insert into artefactos values (20, 'Ventiladores', 'Sansei', 'VPS1030', 'http://localhost:8080/proyecto/imagenes/productos/Sansei_VPS1030.jpg');
+insert into artefactos values (19, 'Ventilador', 'Protalia', 'V18P', 'http://localhost:8080/proyecto/imagenes/productos/Protalia_V18P.jpg');
+insert into artefactos values (20, 'Ventilador', 'Sansei', 'VPS1030', 'http://localhost:8080/proyecto/imagenes/productos/Sansei_VPS1030.jpg');
 
 
 /*Televisores:*/
@@ -870,7 +870,7 @@ insert into caracteristicas values (50, 'Eficiencia Energetica en Calor', null);
 insert into caracteristicas values (13, 'Medidas de unidad exterior', 'cm');
 insert into caracteristicas values (14, 'Medidas de unidad interior', 'cm');
 
-/*Caracteristicas de Ventiladores:*/
+/*Caracteristicas de Ventilador:*/
 insert into caracteristicas values (15, 'Numero de Velocidades', null);
 
 /*Caracteristicas de Televisores:*/

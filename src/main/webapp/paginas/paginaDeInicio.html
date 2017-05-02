@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="../js/paginaDeInicio.js"></script>
 </head>
 
-<body>
+<body onload="controladorDeCheckbox(false, false, false, false, false, false)">
 	<div class="divDeNombrePagina">
 	<p class="pNombrePagina">ELECTRO STORE</p>
 	<hr class="hrNombrePagina">
@@ -19,12 +19,12 @@
 		<div id="filtrosAplicados"></div><hr>
 			
 		<p class="pFiltros">Categorias:</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeProductos('Cocina', 'cocinas')" id="cocinas"> Cocinas</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeProductos('Aire/Acondicionado', 'airesAcondicionados')" id="airesAcondicionados"> Aires Acondicionados</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeProductos('Ventiladores', 'ventiladores')" id="ventiladores"> Ventiladores</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeProductos('TV', 'televisores')" id="televisores"> Televisores</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeProductos('Notebook', 'notebooks')" id="notebooks"> Notebooks</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeProductos('Smartphone', 'celulares')" id="celulares"> Celulares</p>
+			<p class="pFiltros"><input type="checkbox" onclick="creadorDeCocinas()" id="cocinas"> Cocinas</p>
+			<p class="pFiltros"><input type="checkbox" onclick="creadorDeAiresAcondicionados()" id="airesAcondicionados"> Aires Acondicionados</p>
+			<p class="pFiltros"><input type="checkbox" onclick="creadorDeVentiladores()" id="ventiladores"> Ventiladores</p>
+			<p class="pFiltros"><input type="checkbox" onclick="creadorDeTelevisores()" id="televisores"> Televisores</p>
+			<p class="pFiltros"><input type="checkbox" onclick="creadorDeNotebooks()" id="notebooks"> Notebooks</p>
+			<p class="pFiltros"><input type="checkbox" onclick="creadorDeSmartphones()" id="celulares"> Celulares</p>
 	</div>
 	
 	<div class="divTituloProductos" ">
