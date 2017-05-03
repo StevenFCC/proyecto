@@ -14,6 +14,10 @@ div#filtros {
 		font-size: 25px;
 	}
 
+	.hFiltros {
+		border-style: solid;
+	}
+
 .divTituloProductos {
 	background-color: white;
 	float: left;
@@ -43,7 +47,7 @@ div#filtros {
 	background-color: white;
 	float: left;
 	width: 400px;
-	height: 500px;
+	height: 525px;
 	margin-left: 30px;
 	margin-right: 30px;
 	margin-bottom: 30px;
@@ -61,15 +65,12 @@ div#filtros {
 	}
 
 	.aDeProductoAMostrar {
-		width: 300px;
-		height: 40px;
-		font-size: 25px;
-		margin-left: 30px;
-		margin-right: 30px;
-		margin-top: 10px;
+		font-size: 30px;
 	}
 
 	.divDeA {
 		width: 300px;
-		height: 40px;
+		height: 80px;
+		margin-left: 30px;
+		margin-top: 30px;
 	}

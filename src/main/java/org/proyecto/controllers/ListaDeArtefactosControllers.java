@@ -33,21 +33,4 @@ public class ListaDeArtefactosControllers {
 		
 		return lista;
 	}
-
-	@GET
-	@Path("/{complemento}")
-	@Produces(MediaType.APPLICATION_JSON)
-	public List<Artefacto> getListaDeArtefactosPorTipo (@PathParam ("nombreDeArtefactos") String nombreDeArtefacto, @PathParam ("complemento") String complemento) {
-		
-		List<Artefacto> lista = new ArrayList<Artefacto>();
-		
-		try {
-			lista = services.getListaDeArtefactoPorTipo(nombreDeArtefacto + " " + complemento);
-		} catch (SQLException e) {
-			e.printStackTrace();
-			throw new RuntimeException();
-		}
-		
-		return lista;
-	}
 }

@@ -76,7 +76,7 @@ function caracteristicasDeProducto(idDeArtefacto) {
 			var modelo = "Modelo: " + obj.artefacto.modelo;
 			itemDeCaracteristica(modelo);
 
-			for (var contador = 0; contador < lista.length; contador++) {
+			for (var contador = 0; contador < obj.length; contador++) {
 				
 				var limitador = obj.listaDeCaracteristicas[contador].nombreDeCaracteristica;
 				var limitadorPorValor = obj.listaDeCaracteristicas[contador].valorDeCaracteristica;

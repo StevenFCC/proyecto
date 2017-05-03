@@ -5,7 +5,7 @@ function creadorDeCocinas() {
 
 function creadorDeAiresAcondicionados() {
 	controladorDeCheckbox(false, true, false, false, false, false);
-	creadorDeProductos('Aire/Acondicionado', 'airesAcondicionados');
+	creadorDeProductos('Aire%20Acondicionado', 'airesAcondicionados');
 }
 
 function creadorDeVentiladores() {
@@ -100,7 +100,7 @@ function creadorDeProductos(nombreDeArtefactos, id) {
 
 				eliminarElementos();
 
-				for ( var contador = 0; contador < lista.length; contador++) {
+				for ( var contador = 0; contador < obj.length; contador++) {
 					
 					var idDeArtefacto = obj[contador].idDeArtefacto;
 					var nombre = obj[contador].nombre;

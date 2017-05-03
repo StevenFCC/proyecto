@@ -35,71 +35,18 @@ public class ArtefactosDAO {
 		Statement st = con.createStatement();
 		ResultSet rs = st.executeQuery("SELECT * FROM artefactos where nombre = " + "'" + nombreDeArtefacto + "'" + ";");
 		
+		
 		List <Artefacto> listaDeArtefactos = new ArrayList<Artefacto>();
 		
 		while (rs.next()) {
 			
-			String nombreArtefacto = rs.getString(2);
-			
-			if (nombreArtefacto.equals("Cocina")) {
-				Artefacto datosDeArtefacto = new Artefacto();
-				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
-				datosDeArtefacto.setNombre(rs.getString(2));
-				datosDeArtefacto.setMarca(rs.getString(3));
-				datosDeArtefacto.setModelo(rs.getString(4));
-				datosDeArtefacto.setImagen(rs.getString(5));
-				listaDeArtefactos.add(datosDeArtefacto);
-			} 
-			
-			else if (nombreArtefacto.equals("Aire Acondicionado")) {
-				Artefacto datosDeArtefacto = new Artefacto();
-				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
-				datosDeArtefacto.setNombre(rs.getString(2));
-				datosDeArtefacto.setMarca(rs.getString(3));
-				datosDeArtefacto.setModelo(rs.getString(4));
-				datosDeArtefacto.setImagen(rs.getString(5));
-				listaDeArtefactos.add(datosDeArtefacto);
-			}
-			
-			else if (nombreArtefacto.equals("Ventiladores")) {
-				Artefacto datosDeArtefacto = new Artefacto();
-				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
-				datosDeArtefacto.setNombre(rs.getString(2));
-				datosDeArtefacto.setMarca(rs.getString(3));
-				datosDeArtefacto.setModelo(rs.getString(4));
-				datosDeArtefacto.setImagen(rs.getString(5));
-				listaDeArtefactos.add(datosDeArtefacto);
-			}
-			
-			else if (nombreArtefacto.equals("TV")) {
-				Artefacto datosDeArtefacto = new Artefacto();
-				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
-				datosDeArtefacto.setNombre(rs.getString(2));
-				datosDeArtefacto.setMarca(rs.getString(3));
-				datosDeArtefacto.setModelo(rs.getString(4));
-				datosDeArtefacto.setImagen(rs.getString(5));
-				listaDeArtefactos.add(datosDeArtefacto);
-			}
-			
-			else if (nombreArtefacto.equals("Notebook")) {
-				Artefacto datosDeArtefacto = new Artefacto();
-				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
-				datosDeArtefacto.setNombre(rs.getString(2));
-				datosDeArtefacto.setMarca(rs.getString(3));
-				datosDeArtefacto.setModelo(rs.getString(4));
-				datosDeArtefacto.setImagen(rs.getString(5));
-				listaDeArtefactos.add(datosDeArtefacto);
-			} 
-			
-			else if (nombreArtefacto.equals("Smartphone")) {
-				Artefacto datosDeArtefacto = new Artefacto();
-				datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
-				datosDeArtefacto.setNombre(rs.getString(2));
-				datosDeArtefacto.setMarca(rs.getString(3));
-				datosDeArtefacto.setModelo(rs.getString(4));
-				datosDeArtefacto.setImagen(rs.getString(5));
-				listaDeArtefactos.add(datosDeArtefacto);
-			}
+		Artefacto datosDeArtefacto = new Artefacto();
+			datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
+			datosDeArtefacto.setNombre(rs.getString(2));
+			datosDeArtefacto.setMarca(rs.getString(3));
+			datosDeArtefacto.setModelo(rs.getString(4));
+			datosDeArtefacto.setImagen(rs.getString(5));
+			listaDeArtefactos.add(datosDeArtefacto);
 		}
 		
 		JDBCConnection.closeConnectionToDataBase(con);
