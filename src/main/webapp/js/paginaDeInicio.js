@@ -124,3 +124,5 @@ function creadorDeProductos(nombreDeArtefactos, id) {
 	xhr.open("GET", endpoint, true);
 	xhr.send(null);
 }
+
+//not found exception
