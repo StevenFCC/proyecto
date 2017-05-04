@@ -26,10 +26,12 @@ public class ArtefactosController {
 			artefacto = services.getArt(idArtefacto);
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
-			throw new RuntimeException();
+			//throw new RuntimeException();
+			throw new IllegalArgumentException();
 		} catch (SQLException e) {
 			e.printStackTrace();
-			throw new RuntimeException();
+			//throw new RuntimeException();
+			throw new IllegalArgumentException();
 		}
 		
 		return artefacto;

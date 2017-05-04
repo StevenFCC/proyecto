@@ -16,9 +16,10 @@ public class ArtefactosDAO {
 	Statement st = con.createStatement();
 	ResultSet rs = st.executeQuery("SELECT * FROM artefactos where id = " + idDeArtefacto + ";");
 	
-	Artefacto artefacto = new Artefacto();
+	Artefacto artefacto = null;
 	
 	if(rs.next()) {
+		artefacto = new Artefacto();
 		artefacto.setIdDeArtefacto(rs.getInt(1));
 		artefacto.setNombre(rs.getString(2));
 		artefacto.setMarca(rs.getString(3));
@@ -40,7 +41,7 @@ public class ArtefactosDAO {
 		
 		while (rs.next()) {
 			
-		Artefacto datosDeArtefacto = new Artefacto();
+			Artefacto datosDeArtefacto = new Artefacto();
 			datosDeArtefacto.setIdDeArtefacto(rs.getInt(1));
 			datosDeArtefacto.setNombre(rs.getString(2));
 			datosDeArtefacto.setMarca(rs.getString(3));

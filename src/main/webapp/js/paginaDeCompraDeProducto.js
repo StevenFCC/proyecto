@@ -45,8 +45,8 @@ function compraDeProducto() {
 	var valorDeParametroConvertido = unescape(valorDeParametro);
 	var idDeArtefacto = valorDeParametroConvertido;
 
-	var endpoint = "http://localhost:8080/proyecto/ws/compras/" + idDeArtefacto + "/" + usuario.value + "/" + clave.value;
-	//var endpoint = "http://localhost:8080/proyecto/ws/compras/6/Steven/1234";
-	xhr.open("GET", endpoint, true);
-	xhr.send(null);
+	var endpoint = "http://localhost:8080/proyecto/ws/compras/" + idDeArtefacto;
+	xhr.open("POST", endpoint, true);
+	xhr.setRequestHeader("Content-Type", "application/json");
+	xhr.send(JSON.stringify({nombreDeUsuario: usuario.value, clave: clave.value}));
 }

@@ -4,7 +4,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -16,39 +16,42 @@ import org.proyecto.sevices.ArtefactosServices;
 import org.proyecto.sevices.RegistroDeComprasServices;
 import org.proyecto.sevices.UsuariosServices;
 
-@Path("compras/{idDeArtefactoComprado}/{nombreDeUsuarioQueCompro}/{claveDeUsuarioQueCompro}")
+@Path("compras/{idDeArtefactoComprado}")
 public class CompraDeUsuariosControllers {
 
 	private final RegistroDeComprasServices services = new RegistroDeComprasServices();
 	private final ArtefactosServices servicesDeArtefacto = new ArtefactosServices();
 	private final UsuariosServices servicesDeUsuario = new UsuariosServices();
 	
-	@GET
+	@POST
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<String> setComprasDeUsuario(@PathParam ("idDeArtefactoComprado") int idDeArtefactoComprado, @PathParam("nombreDeUsuarioQueCompro") String nombreDeUsuario, @PathParam ("claveDeUsuarioQueCompro") String claveDeUsuario) {
+	public List<String> setComprasDeUsuario(@PathParam ("idDeArtefactoComprado") int idDeArtefactoComprado, Usuario usuarioQueCompra) {
 		
-		Artefacto artefacto = new Artefacto();
-		Usuario usuario = new Usuario();
+		Artefacto artefacto = null;
+		Usuario usuario = null;
 		
 		try {
 			artefacto = servicesDeArtefacto.getArt(idDeArtefactoComprado);
 		} catch (SQLException e) {
 			e.printStackTrace();
-			throw new RuntimeException();
+			//throw new RuntimeException();
+			throw new IllegalArgumentException();
 		}
 		
 		try {
-			usuario = servicesDeUsuario.getUsuario(nombreDeUsuario, claveDeUsuario);
+			usuario = servicesDeUsuario.getUsuario(usuarioQueCompra.getNombreDeUsuario(), usuarioQueCompra.getClave());
 		} catch (SQLException e) {
 			e.printStackTrace();
-			throw new RuntimeException();
+			//throw new RuntimeException();
+			throw new IllegalArgumentException();
 		}
 		
 		try {
 			services.setComprasDeUsuario(usuario, artefacto);
 		} catch (SQLException e) {
 			e.printStackTrace();
-			throw new RuntimeException();
+			//throw new RuntimeException();
+			throw new IllegalArgumentException();
 		}
 		
 		List<String> datosDeCompra = new ArrayList<String>();

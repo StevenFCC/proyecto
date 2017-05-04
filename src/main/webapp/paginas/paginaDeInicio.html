@@ -8,23 +8,24 @@
 	<script type="text/javascript" src="../js/paginaDeInicio.js"></script>
 </head>
 
-<body onload="controladorDeCheckbox(false, false, false, false, false, false)">
+<body>
 	<div class="divDeNombrePagina">
 	<p class="pNombrePagina">ELECTRO STORE</p>
 	<hr class="hrNombrePagina">
 	</div>
 	
 	<div id="filtros">
-		<p class="pFiltros">Filtrar por</p>
-		<div id="filtrosAplicados"></div><hr>
+		<p class="pFiltrarPor">Filtrar por</p>
+		<div id="filtrosAplicados"></div>
+		<hr class="hFiltros">
 			
-		<p class="pFiltros">Categorias:</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeCocinas()" id="cocinas"> Cocinas</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeAiresAcondicionados()" id="airesAcondicionados"> Aires Acondicionados</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeVentiladores()" id="ventiladores"> Ventiladores</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeTelevisores()" id="televisores"> Televisores</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeNotebooks()" id="notebooks"> Notebooks</p>
-			<p class="pFiltros"><input type="checkbox" onclick="creadorDeSmartphones()" id="celulares"> Celulares</p>
+		<p class="pFiltrarPor">Categorias:</p>
+			<input type="radio" name="Categorias" onclick="creadorDeCocinas()" id="cocinas" class="inputRadioButton"> <p class="pFiltros">Cocinas</p>
+			<input type="radio" name="Categorias" onclick="creadorDeAiresAcondicionados()" id="airesAcondicionados" class="inputRadioButton"> <p class="pFiltros">Aires Acondicionados</p>
+			<input type="radio" name="Categorias" onclick="creadorDeVentiladores()" id="ventiladores" class="inputRadioButton"> <p class="pFiltros">Ventiladores</p>
+			<input type="radio" name="Categorias" onclick="creadorDeTelevisores()" id="televisores" class="inputRadioButton"> <p class="pFiltros">Televisores</p>
+			<input type="radio" name="Categorias" onclick="creadorDeNotebooks()" id="notebooks" class="inputRadioButton"> <p class="pFiltros">Notebooks</p>
+			<input type="radio" name="Categorias" onclick="creadorDeSmartphones()" id="celulares" class="inputRadioButton"> <p class="pFiltros">Celulares</p>
 	</div>
 	
 	<div class="divTituloProductos" ">

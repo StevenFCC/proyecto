@@ -31,9 +31,10 @@ public class UsuariosDAO {
 		String where = "where nombre_de_usuario = " + "'" + nombreDeUsuario + "' and clave = '" + claveDeUsuario + "'";
 		ResultSet rs = st.executeQuery(select + " " + from + " " + where + ";");
 		
-		Usuario usuario = new Usuario();
+		Usuario usuario = null;
 		
 		if (rs.next()) {
+			usuario = new Usuario();
 			usuario.setNombreDeUsuario(rs.getString(2));
 			usuario.setClave(rs.getString(3));;
 		}

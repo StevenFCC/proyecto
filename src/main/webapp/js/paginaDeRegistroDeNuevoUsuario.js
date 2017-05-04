@@ -25,20 +25,31 @@ function insertarNuevoUsuarioEnLaBaseDeDatos() {
 			}
 
 			var ingresarUrl = document.getElementById("retorno");
+			
 			var crearTagA = document.createElement("a");
 			crearTagA.setAttribute("href", "localhost:8080/proyecto/paginas/paginaDeInicio.html");
-			var texto1 = document.createTextNode("Regresar a inicio")
+			crearTagA.setAttribute("class", "aDeRegresarAInicio");
+			var texto1 = document.createTextNode("Regresar al inicio");
 			crearTagA.appendChild(texto1);
-			ingresarUrl.appendChild(crearTagA);
+
+			var crearTagDiv = document.createElement("div");
+			crearTagDiv.setAttribute("class", "divDeA");
+			crearTagDiv.appendChild(crearTagA);
+			
+			
+			ingresarUrl.appendChild(crearTagDiv);
 		}
 	}
 
+	
 	var getInpuntNombreDeUsuario = document.getElementById("nombreDeUsuario");
+	var inputNombreDeUsuarioValue = getInpuntNombreDeUsuario.value;
 	var getInpuntClave = document.getElementById("claveDeUsuario");
-	var nombreDeUsuario = getInpuntNombreDeUsuario.value;
-	var clave = getInpuntClave.value;
+	var inputClaveValue = getInpuntClave.value;
 
-	var endpoint = "http://localhost:8080/proyecto/ws/usuarios/newuser/" + nombreDeUsuario + "/" + clave;
-	xhr.open("GET", endpoint, true);
-	xhr.send(null);
+	var endpoint = "http://localhost:8080/proyecto/ws/usuarios/newuser";
+	xhr.open("POST", endpoint, true);
+
+	xhr.setRequestHeader("Content-Type", "application/json");
+	xhr.send(JSON.stringify({nombreDeUsuario: inputNombreDeUsuarioValue, clave: inputClaveValue}));
 }

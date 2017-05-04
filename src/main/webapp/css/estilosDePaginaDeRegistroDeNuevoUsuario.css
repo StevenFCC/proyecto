@@ -32,3 +32,15 @@
 		margin-bottom: 5px;
 		font-size: 25px;
 	}
+
+	.aDeRegresarAInicio {
+		font-size: 30px;
+	}
+
+	.divDeA {
+		height: 80px;
+		width: 425px;
+		margin-left: 190px;
+		margin-right: 190px;
+		margin-top: 50px;
+	}

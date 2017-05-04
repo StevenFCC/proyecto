@@ -69,14 +69,18 @@ function caracteristicasDeProducto(idDeArtefacto) {
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			
 			var lista = xhr.responseText;
-			obj = JSON.parse(lista);
+			var obj = JSON.parse(lista);
+
+			var getTagTitle = document.getElementById("nombreDePestanna");
+			var textoTitle = document.createTextNode(obj.artefacto.nombre + " " + obj.artefacto.marca + " " + obj.artefacto.modelo);
+			getTagTitle.appendChild(textoTitle);
 
 			var marca = "Marca: " + obj.artefacto.marca;
 			itemDeCaracteristica(marca);
 			var modelo = "Modelo: " + obj.artefacto.modelo;
 			itemDeCaracteristica(modelo);
 
-			for (var contador = 0; contador < obj.length; contador++) {
+			for (var contador = 0; contador < obj.listaDeCaracteristicas.length; contador++) {
 				
 				var limitador = obj.listaDeCaracteristicas[contador].nombreDeCaracteristica;
 				var limitadorPorValor = obj.listaDeCaracteristicas[contador].valorDeCaracteristica;

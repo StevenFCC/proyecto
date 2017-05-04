@@ -1,30 +1,30 @@
 function creadorDeCocinas() {
-	controladorDeCheckbox(true, false, false, false, false, false);
+	//controladorDeCheckbox(true, false, false, false, false, false);
 	creadorDeProductos('Cocina', 'cocinas');
 }
 
 function creadorDeAiresAcondicionados() {
-	controladorDeCheckbox(false, true, false, false, false, false);
+	//controladorDeCheckbox(false, true, false, false, false, false);
 	creadorDeProductos('Aire%20Acondicionado', 'airesAcondicionados');
 }
 
 function creadorDeVentiladores() {
-	controladorDeCheckbox(false, false, true, false, false, false);
+	//controladorDeCheckbox(false, false, true, false, false, false);
 	creadorDeProductos('Ventilador', 'ventiladores');
 }
 
 function creadorDeTelevisores() {
-	controladorDeCheckbox(false, false, false, true, false, false);
+	//controladorDeCheckbox(false, false, false, true, false, false);
 	creadorDeProductos('TV', 'televisores');
 }
 
 function creadorDeNotebooks() {
-	controladorDeCheckbox(false, false, false, false, true, false);
+	//controladorDeCheckbox(false, false, false, false, true, false);
 	creadorDeProductos('Notebook', 'notebooks');
 }
 
 function creadorDeSmartphones() {
-	controladorDeCheckbox(false, false, false, false, false, true);
+	//controladorDeCheckbox(false, false, false, false, false, true);
 	creadorDeProductos('Smartphone', 'celulares');
 }
 
@@ -124,5 +124,3 @@ function creadorDeProductos(nombreDeArtefactos, id) {
 	xhr.open("GET", endpoint, true);
 	xhr.send(null);
 }
-
-//not found exception

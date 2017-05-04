@@ -3,6 +3,7 @@ package org.proyecto.controllers;
 import java.sql.SQLException;
 
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -16,14 +17,14 @@ public class UsuariosController {
 	
 	private final UsuariosServices services = new UsuariosServices();
 	
-	@GET
-	@Path("/newuser/{nameofuser}/{password}")
+	@POST
+	@Path("/newuser")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Usuario setUsuario(@PathParam ("nameofuser") String nombreDeUsuario, @PathParam("password") String clave) {
+	public Usuario setUsuario(Usuario usuarioNuevo) {
 		
 		Usuario usuario = new Usuario();
-		usuario.setNombreDeUsuario(nombreDeUsuario);
-		usuario.setClave(clave);
+		usuario.setNombreDeUsuario(usuarioNuevo.getNombreDeUsuario());
+		usuario.setClave(usuarioNuevo.getClave());
 		
 		try {
 			services.setUsuario(usuario);
@@ -40,7 +41,7 @@ public class UsuariosController {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Usuario getUsuario(@PathParam ("name") String nombreDeUsuario, @PathParam ("password") String claveDeUsuario) {
 		
-		Usuario usuario = new Usuario();
+		Usuario usuario;
 		
 		try {
 			usuario = services.getUsuario(nombreDeUsuario, claveDeUsuario);
