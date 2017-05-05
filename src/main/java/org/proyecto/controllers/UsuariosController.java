@@ -2,11 +2,10 @@ package org.proyecto.controllers;
 
 import java.sql.SQLException;
 
-import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 
 import org.proyecto.entities.Usuario;
@@ -27,24 +26,17 @@ public class UsuariosController {
 		usuario.setClave(usuarioNuevo.getClave());
 		
 		try {
-			services.setUsuario(usuario);
-		} catch (SQLException e) {
-			e.printStackTrace();
+			Usuario usuarioExistente = services.getUsuarioPorNombre(usuarioNuevo.getNombreDeUsuario());;
+			if (usuarioExistente != null) {
+				throw new WebApplicationException(404);
+			}
+		} catch (SQLException e1) {
+			e1.printStackTrace();
 			throw new RuntimeException();
 		}
 		
-		return usuario;
-	}
-	
-	@GET
-	@Path("/usuario/{name}/{password}")
-	@Produces(MediaType.APPLICATION_JSON)
-	public Usuario getUsuario(@PathParam ("name") String nombreDeUsuario, @PathParam ("password") String claveDeUsuario) {
-		
-		Usuario usuario;
-		
 		try {
-			usuario = services.getUsuario(nombreDeUsuario, claveDeUsuario);
+			services.setUsuario(usuario);
 		} catch (SQLException e) {
 			e.printStackTrace();
 			throw new RuntimeException();

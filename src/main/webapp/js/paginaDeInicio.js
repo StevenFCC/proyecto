@@ -1,30 +1,24 @@
 function creadorDeCocinas() {
-	//controladorDeCheckbox(true, false, false, false, false, false);
 	creadorDeProductos('Cocina', 'cocinas');
 }
 
 function creadorDeAiresAcondicionados() {
-	//controladorDeCheckbox(false, true, false, false, false, false);
 	creadorDeProductos('Aire%20Acondicionado', 'airesAcondicionados');
 }
 
 function creadorDeVentiladores() {
-	//controladorDeCheckbox(false, false, true, false, false, false);
 	creadorDeProductos('Ventilador', 'ventiladores');
 }
 
 function creadorDeTelevisores() {
-	//controladorDeCheckbox(false, false, false, true, false, false);
 	creadorDeProductos('TV', 'televisores');
 }
 
 function creadorDeNotebooks() {
-	//controladorDeCheckbox(false, false, false, false, true, false);
 	creadorDeProductos('Notebook', 'notebooks');
 }
 
 function creadorDeSmartphones() {
-	//controladorDeCheckbox(false, false, false, false, false, true);
 	creadorDeProductos('Smartphone', 'celulares');
 }
 
@@ -40,7 +34,7 @@ function eliminarElementos() {
 function creadorDeDivDeProductos(linkDeProducto, linkDeImagenDeProducto, datosDeProductos) {
 
 	//Esta variable toma el div del DOM
-	var getDivVacio = document.getElementById("productosAMostrar");
+	var getDivProductosAMostrar = document.getElementById("productosAMostrar");
 	
 	//Esta variable crea el div donde estaran los datos del producto
 	var crearDivDeproductos = document.createElement("div");
@@ -64,25 +58,8 @@ function creadorDeDivDeProductos(linkDeProducto, linkDeImagenDeProducto, datosDe
 	crearDivDeproductos.appendChild(creadorDeDiv);
 
 	//Agrega todo al DOM
-	getDivVacio.appendChild(crearDivDeproductos);
+	getDivProductosAMostrar.appendChild(crearDivDeproductos);
 }
-
-function controladorDeCheckbox(e1, e2, e3, e4, e5, e6) {
-	var checkbox1 = document.getElementById("cocinas");
-	var checkbox2 = document.getElementById("airesAcondicionados");
-	var checkbox3 = document.getElementById("ventiladores");
-	var checkbox4 = document.getElementById("televisores");
-	var checkbox5 = document.getElementById("notebooks");
-	var checkbox6 = document.getElementById("celulares");
-
-	checkbox1.checked = e1;
-	checkbox2.checked = e2;
-	checkbox3.checked = e3;
-	checkbox4.checked = e4;
-	checkbox5.checked = e5;
-	checkbox6.checked = e6;
-	
-	}
 
 function creadorDeProductos(nombreDeArtefactos, id) {
 
@@ -93,10 +70,11 @@ function creadorDeProductos(nombreDeArtefactos, id) {
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			
 			var lista = xhr.responseText;
-			obj = JSON.parse(lista);
+			var obj = JSON.parse(lista);
 			
-			var checkbox = document.getElementById(id);
-			if (checkbox.checked == true) {
+			var getCheckboxPorId = document.getElementById(id);
+
+			if (getCheckboxPorId.checked == true) {
 
 				eliminarElementos();
 

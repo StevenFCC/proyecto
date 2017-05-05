@@ -18,4 +18,10 @@ public class UsuariosServices {
 		usuario = dao.getUsuario(nombreDeUsuario, claveDeUsuario);
 		return usuario;
 	}
+	
+	public Usuario getUsuarioPorNombre(String nombreDeUsuario) throws SQLException {
+		Usuario usuario;
+		usuario = dao.getUsuarioPorNombre(nombreDeUsuario);
+		return usuario;
+	}
 }

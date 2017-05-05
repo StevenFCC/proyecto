@@ -2,13 +2,13 @@
 <html>
 
 <head>
-	<title id="title">Nombre a Recibir</title>
+	<title id="title">Concretar Compra</title>
 	<link rel="stylesheet" type="text/css" href="../css/estilosDePaginaGeneral.css"></link>
 	<link rel="stylesheet" type="text/css" href="../css/estilosDePaginaDeCompraDeProducto.css"></link>
 	<script type="text/javascript" src="../js/paginaDeCompraDeProducto.js"></script>
 </head>
 
-<body>
+<body onload="retornoSiSeRegistraUnNuevoUsuario()">
 	<div class="divDeNombrePagina">
 	<p class="pNombrePagina">ELECTRO STORE</p>
 	<hr class="hrNombrePagina">
@@ -16,15 +16,15 @@
 
 	<div class="divCompra">
 		<p class="pTituloCompra">Ingrese su Usuario y Clave para concretar la compra</p>
-		<p class="pCompra">Si no posee un usuario registrese <a href="http://localhost:8080/proyecto/paginas/paginaDeRegistroDeNuevoUsuario.html">aqui</a></p>
+		<p class="pCompra">Si no posee un usuario registrese <a id="retorno">aqui</a></p>
 		<p class="pCompra">Usuario <input type="text" id="usuario"> </p>
 		<p class="pCompra">Clave <input type="password" id="clave"> </p>
-		<div id="datosIncorrectos" class="divDatosIncorrectos">
+		
+		<div id="datos" class="divDatos">
 		</div>
+		
 		<div id= "borrar">
 			<input type="button" value="Concretar Compra" class="inputConcretarCompra" onclick="compraDeProducto()">
-		</div>
-		<div id="retorno">
 		</div>
 	</div>
 </body>

@@ -1,6 +1,6 @@
 .divCompra {
 	width: 600px;
-	height: 475px;
+	height: 540px;
 	background-color: white;
 	margin-top: 30px;
 	margin-left: auto;
@@ -24,6 +24,15 @@
 		margin-bottom: 30px;
 	}
 
+	.pCompraIncorrecta {
+		padding-top: 10px;
+		padding-left: 20px;
+		font-size: 30px;
+		margin-top: 0px;
+		margin-bottom: 30px;
+		color: red;
+	}
+
 	.inputConcretarCompra {
 		height: 50px;
 		margin-top: 40px;
@@ -33,11 +42,24 @@
 		font-size: 25px;
 	}
 
-	.divDatosIncorrectos {
+	.divDatos {
 		height: 50px;
 		width: 580px;
 		margin-top: 0px;
 		margin-left: 10px;
 		margin-right: 10px;
 		margin-bottom: 0px;
+	}
+
+	.aDeInicio {
+		font-size: 30px;
+	}
+
+	.divDeADeInicio {
+		width: 184.5px;
+		height: 70px;
+		margin-left: 150px;
+		margin-right: 150px;
+		margin-bottom: 10px;
+		margin-top: 10px;
 	}

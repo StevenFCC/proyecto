@@ -8,6 +8,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 
 import org.proyecto.entities.Artefacto;
@@ -32,26 +33,29 @@ public class CompraDeUsuariosControllers {
 		
 		try {
 			artefacto = servicesDeArtefacto.getArt(idDeArtefactoComprado);
+			if (artefacto == null) {
+				throw new WebApplicationException(404);
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-			//throw new RuntimeException();
-			throw new IllegalArgumentException();
+			throw new RuntimeException(e);	
 		}
 		
 		try {
 			usuario = servicesDeUsuario.getUsuario(usuarioQueCompra.getNombreDeUsuario(), usuarioQueCompra.getClave());
+			if (usuario == null) {
+				throw new WebApplicationException(404);
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-			//throw new RuntimeException();
-			throw new IllegalArgumentException();
+			throw new RuntimeException(e);
 		}
 		
 		try {
 			services.setComprasDeUsuario(usuario, artefacto);
 		} catch (SQLException e) {
 			e.printStackTrace();
-			//throw new RuntimeException();
-			throw new IllegalArgumentException();
+			throw new RuntimeException(e);
 		}
 		
 		List<String> datosDeCompra = new ArrayList<String>();
@@ -59,6 +63,5 @@ public class CompraDeUsuariosControllers {
 		datosDeCompra.add(artefacto.getNombre() + " " + artefacto.getMarca() +  " " + artefacto.getModelo());
 		
 		return datosDeCompra;
-	}
-	
+	}	
 }

@@ -1,6 +1,6 @@
 .divRegistro {
 	width: 600px;
-	height: 475px;
+	height: 500px;
 	background-color: white;
 	margin-top: 30px;
 	margin-left: auto;
@@ -40,7 +40,7 @@
 	.divDeA {
 		height: 80px;
 		width: 425px;
-		margin-left: 190px;
-		margin-right: 190px;
-		margin-top: 50px;
+		margin-left: 110px;
+		margin-right: 110px;
+		margin-top: 30px;
 	}

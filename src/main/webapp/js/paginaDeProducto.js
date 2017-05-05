@@ -117,13 +117,11 @@ function caracteristicasDeProducto(idDeArtefacto) {
 
 				if (limitadorPorValor == "true") {
 					var propiedad = obj.listaDeCaracteristicas[contador].nombreDeCaracteristica + ": ";
-					//var estadoDeCheckedValor = obj.listaDeCaracteristicas[contador].valorDeCaracteristica;
 					creadorDeInputsTypeCheckbox(propiedad, true);
 				}
 
 				if (limitadorPorValor == "false") {
 					var propiedad = obj.listaDeCaracteristicas[contador].nombreDeCaracteristica + ": ";
-					//var estadoDeCheckedValor = obj.listaDeCaracteristicas[contador].valorDeCaracteristica;
 					creadorDeInputsTypeCheckbox(propiedad, false);
 				}
 			}

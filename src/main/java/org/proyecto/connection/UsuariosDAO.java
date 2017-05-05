@@ -17,7 +17,6 @@ public class UsuariosDAO {
 				+ "'" + usuario.getNombreDeUsuario() + "',"
 				+ "'" + usuario.getClave() + "'"
 				+ ")";
-		System.out.println(queryToExecute);
 		int response = st.executeUpdate(queryToExecute);
 		System.out.println(response);
 		JDBCConnection.closeConnectionToDataBase(con);
@@ -29,6 +28,27 @@ public class UsuariosDAO {
 		String select = "SELECT *";
 		String from = "FROM productosventas.usuarios";
 		String where = "where nombre_de_usuario = " + "'" + nombreDeUsuario + "' and clave = '" + claveDeUsuario + "'";
+		ResultSet rs = st.executeQuery(select + " " + from + " " + where + ";");
+		
+		Usuario usuario = null;
+		
+		if (rs.next()) {
+			usuario = new Usuario();
+			usuario.setNombreDeUsuario(rs.getString(2));
+			usuario.setClave(rs.getString(3));;
+		}
+		
+		JDBCConnection.closeConnectionToDataBase(con);
+		
+		return usuario;
+	}
+	
+	public Usuario getUsuarioPorNombre(String nombreDeUsuario) throws SQLException {
+		Connection con = JDBCConnection.connectToDataBase();
+		Statement st = con.createStatement();
+		String select = "SELECT *";
+		String from = "FROM productosventas.usuarios";
+		String where = "where nombre_de_usuario = " + "'" + nombreDeUsuario + "'";
 		ResultSet rs = st.executeQuery(select + " " + from + " " + where + ";");
 		
 		Usuario usuario = null;

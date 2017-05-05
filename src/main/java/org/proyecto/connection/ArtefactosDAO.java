@@ -19,6 +19,7 @@ public class ArtefactosDAO {
 	Artefacto artefacto = null;
 	
 	if(rs.next()) {
+		
 		artefacto = new Artefacto();
 		artefacto.setIdDeArtefacto(rs.getInt(1));
 		artefacto.setNombre(rs.getString(2));
