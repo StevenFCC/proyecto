@@ -2,7 +2,7 @@ package org.proyecto.controllers;
 
 import java.sql.SQLException;
 
-import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.WebApplicationException;
 
@@ -14,7 +14,7 @@ public class UsuariosAdministradorController {
 	
 	private final UsuariosAdministradoresServices services = new UsuariosAdministradoresServices();
 	
-	@GET
+	@POST
 	public void getUsuarioAdministrado(Usuario usuarioAdministrador) {
 		
 		Usuario usuarioAdm = null;

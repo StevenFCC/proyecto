@@ -12,7 +12,7 @@ function compraDeProducto() {
 
 			var texto = document.createTextNode("Nombre de usuario o clave incorrecta");
 			
-			crearTagPConTexto(getDivDatos, texto)
+			crearTagPConTexto(getDivDatos, texto, "pCompraIncorrecta")
 		}
 		
 		if (xhr.readyState == 4 && xhr.status == 200) {
@@ -29,7 +29,7 @@ function compraDeProducto() {
 
 			var texto = document.createTextNode("Felicidades usuario " + usuarioQueCompro + " la compra de su " + artefactoQueCompro + " fue realizada con exito");
 			
-			crearTagPConTexto(getDivDatos, texto);
+			crearTagPConTexto(getDivDatos, texto, "pCompraCorrecta");
 
 			var getDivBorrar = document.getElementById("borrar");
 	
@@ -65,6 +65,7 @@ function compraDeProducto() {
 }
 
 function retornoSiSeRegistraUnNuevoUsuario() {
+
 	var getTagA = document.getElementById("retorno");
 	
 	var valorDeParametros = location.search.split("=");
@@ -75,10 +76,10 @@ function retornoSiSeRegistraUnNuevoUsuario() {
 	getTagA.setAttribute("href", "http://localhost:8080/proyecto/paginas/paginaDeRegistroDeNuevoUsuario.html?idDeArtefacto=" + idDeArtefacto);
 }
 
-function crearTagPConTexto(padreAlCualAsignar, textoAInsertar) {
+function crearTagPConTexto(padreAlCualAsignar, textoAInsertar, estilo) {
 	
 	var crearTagP = document.createElement("p");
-	crearTagP.setAttribute("class", "pCompraIncorrecta")
+	crearTagP.setAttribute("class", estilo);
 	crearTagP.appendChild(textoAInsertar);
 	padreAlCualAsignar.appendChild(crearTagP);
 }

@@ -1,46 +1,30 @@
-function controladorDeLosInputs() {
-	
-	var getInpuntNombreDeUsuario = document.getElementById("nombreDeUsuario");
-	var getInpuntClave = document.getElementById("claveDeUsuario");
+function controladorValoresInputs() {
 
-	if (getInpuntNombreDeUsuario.value == "" && getInpuntClave.value == "") {
+	var getDivEstadoDeRegistro = document.getElementById("estadoDeRegistro");
+
+	eliminar(getDivEstadoDeRegistro);
+
+	var inputUsuario = document.getElementById("nombreDeUsuario");
+	var inputClave = document.getElementById("claveDeUsuario");
+
+	if (inputClave.value == "" || inputUsuario.value == "") {
 		
-		var getDivEstadoDeRegistro = document.getElementById("estadoDeRegistro");
-
-		eliminar(getDivEstadoDeRegistro);
-
-		var texto = "Complete el nombre del usuario y su clave";
-
-		crearTagPConTexto(getDivEstadoDeRegistro, texto);
-
-	} else if (getInpuntClave.value == "") {
+			var texto = "Campo de usuario o clave vacios";
+			crearTagPConTexto(getDivEstadoDeRegistro, texto);
 		
-		var getDivEstadoDeRegistro = document.getElementById("estadoDeRegistro");
-
-		eliminar(getDivEstadoDeRegistro);
-
-		var texto = "Complete la clave del usuario";
-
-		crearTagPConTexto(getDivEstadoDeRegistro, texto);
-
-	} else if (getInpuntNombreDeUsuario.value == "") {
-
-		var getDivEstadoDeRegistro = document.getElementById("estadoDeRegistro");
-
-		eliminar(getDivEstadoDeRegistro);
-
-		var texto = "Complete el nombre del usuario";
-
+	} else if (inputUsuario.value.length < 3 || inputUsuario.value.length > 10) {
+			
+			var texto = "Campo de usuario incorrecto, nombre de usuario minimo de tres caracteres y maxima de 10";
+			crearTagPConTexto(getDivEstadoDeRegistro, texto);
+		
+	} else if (inputClave.value.length < 4 || inputClave.value.length > 15) {
+		
+		var texto = "Campo de clave incorrecto, clave minima de tres caracteres y maxima de 15";
 		crearTagPConTexto(getDivEstadoDeRegistro, texto);
 
 	} else {
-
-		var getDivEstadoDeRegistro = document.getElementById("estadoDeRegistro");
-
-		eliminar(getDivEstadoDeRegistro);
-
+		
 		insertarNuevoUsuarioEnLaBaseDeDatos();
-
 	}
 }
 

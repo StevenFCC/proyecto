@@ -33,6 +33,14 @@
 		color: red;
 	}
 
+	.pCompraCorrecta {
+		padding-top: 10px;
+		padding-left: 20px;
+		font-size: 30px;
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+
 	.inputConcretarCompra {
 		height: 50px;
 		margin-top: 40px;

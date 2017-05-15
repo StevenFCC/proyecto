@@ -14,18 +14,20 @@
 	<hr class="hrNombrePagina">
 	</div>
 
+	
 	<div class="divRegistro">
 		<p class="pRegistro">Ingrese un nombre de Usuario y una Clave para registrarse</p>
-		<p class="pRegistro">Nombre de Usuario <input type="text" id="nombreDeUsuario"></p>
-		<p class="pRegistro">Clave <input type="password" id="claveDeUsuario"></p>
+		<p class="pRegistro">Nombre de Usuario <input type="text" id="nombreDeUsuario" minlength="3" maxlength="15" name="datos"></p>
+		<p class="pRegistro">Clave <input type="password" id="claveDeUsuario" minlength="4" maxlength="20" name="datos"></p>
 		
 		<div id="estadoDeRegistro" class="divEstadoDeRegistro">
 		</div>
 
 		<div id="borrar">
-			<input type="button" value="Crear nuevo Usuario" class="inputCrearNuevoUsuario" onclick="controladorDeLosInputs()">
+			<input type="submit" value="Crear nuevo Usuario" class="inputCrearNuevoUsuario" onclick="controladorValoresInputs()">
 		</div>
 	</div>
+	
 </body>
 
 </html>
